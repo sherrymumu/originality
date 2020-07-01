@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>cylm</title>
+    <link rel="stylesheet" href="css/perfect_Information.css">
+    <link rel="stylesheet" href="layui/css/layui.css" media="all"/>
+
+    <script src="layui/layui.js"></script>
+    <style>
+        #myCheck {
+            display: none;
+        }
+
+        #myCheck + label {
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid #65C2B9;
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 12px;
+            cursor: pointer;
+        }
+
+        #myCheck:checked + label {
+            background-color: #65C2B9;
+        }
+
+        #myCheck:checked + label:after {
+            color: white;
+            content: "\2714";
+        }
+
+        #myCheck1 {
+            display: none;
+        }
+
+        #myCheck1 + label {
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid #65C2B9;
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 12px;
+            cursor: pointer;
+        }
+
+        #myCheck1:checked + #lab1 {
+            background-color: #65C2B9;
+        }
+
+        #myCheck1:checked + #lab1:after {
+            color: white;
+            content: "\2714";
+        }
+    </style>
+
+</head>
+<body>
+<div id="perfect">
+    <div id="perfect_Information">
+        <div id="perfect_top">
+            <p style="margin-left: 30px">完善资料</p>
+        </div>
+        <div id="perfect_content">
+            <div style="width: 95%;padding-bottom: 20px;padding-top: 20px;margin-left: 300px">
+
+                <div class="means_Info">
+                    <span class="Info_title">头像</span>
+                    <span id="perfect_img"><img src="images/a.jpg" alt=""></span>
+
+                </div>
+
+                <div class="means_Info">
+                    <span class="Info_title">ID</span><span style="margin-left: 20px">123456</span>
+                </div>
+                <div class="means_Info">
+                    <span class="Info_title"><span style="color: #ff0000;">*</span>昵称</span><input type="text"
+                                                                                                   class="default_input"
+                                                                                                   placeholder="请输入昵称">
+                </div>
+                <div class="means_Info">
+                    <span class="Info_title">性别</span>
+                    <div style="display: inline-block;margin-left: 20px">
+                        <input type="radio" id="myCheck" name="sex" checked><label for="myCheck"
+                                                                                   style="margin-bottom: 5px"></label>
+                        <span style="font-size: 14px">男</span>
+                    </div>
+
+                    <div style="display: inline-block;margin-left: 10px">
+                        <input type="radio" id="myCheck1" name="sex"><label for="myCheck1" style="margin-bottom: 5px"
+                                                                            id="lab1"></label>
+                        <span style="font-size: 14px">女</span>
+                    </div>
+                </div>
+                <div class="means_Info">
+                    <span class="Info_title">出生日期</span> <input type="text" class="default_input" id="overDate"
+                                                                placeholder="请输入出生日期" name="finishtime"
+                                                                style="margin-left: 16px;"/>
+                </div>
+                <div class="means_Info">
+                    <span class="Info_title">邮箱</span><input type="text" class="default_input" placeholder="请输入邮箱">
+                </div>
+                <div class="means_Info">
+                    <span class="Info_title">手机号</span><span style="margin-left: 20px">18210474584</span>
+                </div>
+                <div class="means_Info">
+                    <span class="Info_title">签名</span>
+                    <textarea class="textarea" style="margin-left: 16px" placeholder="请输入签名"></textarea>
+
+                </div>
+                <div class="means_Info">
+                    <span class="Info_title">常住城市</span>
+                    <select name="" id="" class="select" style="margin-left: 16px;width: 312px">
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择asdasdasdasdasdasd</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                        <option value="">请选择</option>
+                    </select>
+                </div>
+                <div class="means_Info">
+                    <span class="Info_title">毕业院校</span><input type="text" class="default_input" placeholder="请输入毕业院校">
+                </div>
+
+                <div id="perfect_btn">
+                    保存
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    layui.use('laydate', function () {
+        var laydate = layui.laydate;
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#overDate' //指定元素
+        });
+    });
+</script>
+</html>

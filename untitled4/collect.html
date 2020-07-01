@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>cylm</title>
+    <link rel="stylesheet" href="css/collect.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!-- common styles -->
+    <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+    <!-- individual effect -->
+    <link rel="stylesheet" type="text/css" href="css/dialog-sally.css" />
+
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">-->
+
+
+    <script src="js/modernizr.custom.js"></script>
+
+
+    <script src="js/jquery.js"></script>
+
+    <!--修改-->
+    <link rel="stylesheet" href="layui/css/layui.css" media="all"/>
+    <script src="layui/layui.js"></script>
+    <style>
+        #myCheck {
+            display: none;
+        }
+
+        #myCheck + label {
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid #65C2B9;
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 12px;
+            cursor: pointer;
+        }
+
+        #myCheck:checked + label {
+            background-color: #65C2B9;
+        }
+
+        #myCheck:checked + label:after {
+            color: white;
+            content: "\2714";
+        }
+
+        #myCheck1 {
+            display: none;
+        }
+
+        #myCheck1 + label {
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid #65C2B9;
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 12px;
+            cursor: pointer;
+        }
+
+        #myCheck1:checked + #lab1 {
+            background-color: #65C2B9;
+        }
+
+        #myCheck1:checked + #lab1:after {
+            color: white;
+            content: "\2714";
+        }
+
+
+        #ding:hover #dingdan{
+            display: block;
+        }
+
+    </style>
+    <!--修改结束-->
+</head>
+<body>
+<div id="personal" >
+    <div class="content">
+        <div class="con_left">
+            <ul class="ul_left">
+                <li class="order_center"><a href="#show1" class="order_center">订单中心</a></li>
+                <li ><a href="#" id="ding" >我的订单</a>
+                    <ul id="dingdan" style="display: none">
+                        <li id="all_order">全部订单</li>
+                        <li id="pending_Payment">待付款</li>
+                        <li id="pending_received">待收货</li>
+                        <!--<li id="completed">已完成</li>-->
+                    </ul>
+                 </li>
+
+                <!--<li><a  href="">评价晒单</a></li>
+                <li><a href="">退换售后</a></li>-->
+                <!--<li  class="myShop"><a href="" class="myShop">我的店铺</a></li>
+                <li><a href="">我的订单</a></li>
+                <li><a href="">评价晒单</a></li>
+                <li><a href="">退换售后</a></li>
+                <li class="app_theme"><a hrhttp://www.lwtxt.cc/go/24637/17001559.htmlef="#" class="app_theme" style="color: #ff0000" id="shoucang">我的收藏</a></li>-->
+                <li class="personal"><a href="" class="personal">个人中心</a></li>
+                <li><a href="#" id="shoucang">我的收藏</a></li>
+                <li><a href="#" id="myDesigner">我的设计</a></li>                
+                <li><a href="#" id="guanzhu">我的关注</a></li>
+                <li><a href="#" id="touzi">我的投资</a></li>
+                <li class="setting"><a href="" class="setting">设置</a></li>
+                <li><a href="#" id="ziliao">我的资料</a></li>
+                <li><a href="#address_show" id="receiving_Address">收货地址</a></li>
+            </ul>
+        </div>
+        <div class="con_right">
+            <div id="show1" class="show1" style="display: none">
+                <div class="showbrands_top">
+                    <div class="info_left">
+                        <div class="left1">
+                            <img src="img/slide1.png"/>
+                            <div class="per_name">
+                                <p class="user" >安抚</p>
+                                <p class="signature">为自己加油，为自己呐喊。</p>
+                            </div>
+                            <div style="" class="per_price">
+                                <span>余额 : <span>24.00</span></span>
+                                <span style="margin-left:40px;">艺人币 : <span>24</span></span>
+                            </div>
+                        </div>
+                        <div class="left2">
+                            <div class="left2_div1"><p>个人家园</p></div>
+                            <!--<div class="left2_div2"><p>身份认证</p></div>-->
+                        </div>
+                    </div>
+
+                    <div class="info_right">
+                        <div class="right1"></div>
+                        <p class="p1">我的消息</p>
+                    </div>
+                </div>
+                <div class="showbrands_bot">
+                    <div class="bot_fir">
+                        <span class="left">我的订单</span>
+                        <span class="right">查看全部订单</span>
+                    </div>
+                    <div class="bot_sec">
+                        <span>2018-6-1 22 : 31 : 30</span>
+                        <span>订单号 : </span>564521654435<span></span>
+                    </div>
+                    <div class="bot_thir">
+                        <img src="img/dingdan_img.png" alt="" />
+                        <div class="bot_thir_dd"><p>Apple iPad mini 4 7.9英寸 平板电脑(128GB WLAN版 MK9N2CH A 深空灰)</p></div>
+                        <div class="bot_thir_dd2">
+                            <div class="dd2_1">东方饭店</div>
+                            <div class="dd2_2">￥699.00在线支付</div>
+                            <div class="dd2_1">已完成</div>
+                            <div class="dd2_1">查看订单</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="show2" class="show2" style="display: none">
+                <!--修改-->
+                <div id="perfect_Information">
+                    <div id="perfect_top">
+                        <p style="margin-left: 30px">基本信息</p>
+                    </div>
+                    <div id="perfect_content">
+                        <div style="width: 95%;padding-bottom: 20px;padding-top: 20px;margin-left: 30px">
+
+                            <div class="means_Info">
+                                <span class="Info_title">头像</span>
+                                <span id="perfect_img"><img src="images/a.jpg" alt=""></span>
+
+                            </div>
+
+                            <div class="means_Info">
+                                <span class="Info_title">ID</span><span style="margin-left: 20px">123456</span>
+                            </div>
+                            <div class="means_Info">
+                                <span class="Info_title"><span style="color: #ff0000;">*</span>昵称</span><input type="text"
+                                                                                                               class="default_input"
+                                                                                                               placeholder="请输入昵称">
+                            </div>
+                            <div class="means_Info">
+                                <span class="Info_title">性别</span>
+                                <div style="display: inline-block;margin-left: 20px">
+                                    <input type="radio" id="myCheck" name="sex" checked><label for="myCheck"
+                                                                                               style="margin-bottom: 5px"></label>
+                                    <span style="font-size: 14px">男</span>
+                                </div>
+
+                                <div style="display: inline-block;margin-left: 10px">
+                                    <input type="radio" id="myCheck1" name="sex"><label for="myCheck1" style="margin-bottom: 5px"
+                                                                                        id="lab1"></label>
+                                    <span style="font-size: 14px">女</span>
+                                </div>
+                            </div>
+                            <div class="means_Info">
+                                <span class="Info_title">出生日期</span> <input type="text" class="default_input" id="overDate"
+                                                                            placeholder="请输入出生日期" name="finishtime"
+                                                                            style="margin-left: 16px;"/>
+                            </div>
+                            <div class="means_Info">
+                                <span class="Info_title">邮箱</span><input type="text" class="default_input" placeholder="请输入邮箱"><span style="color: #ff0000;margin-left: 20px;cursor: pointer">更改绑定</span>
+                            </div>
+                            <div class="means_Info">
+                                <span class="Info_title">手机号</span><span style="margin-left: 20px">18210474584</span>
+                            </div>
+                            <div class="means_Info">
+                                <span class="Info_title">签名</span>
+                                <textarea class="textarea" style="margin-left: 16px" placeholder="请输入签名（不得超过20个字）"></textarea><span style="color: #ff0000;margin-left: 20px;cursor: pointer">字数不得超过20字</span>
+
+                            </div>
+                            <div class="means_Info">
+                                <span class="Info_title">常住城市</span>
+                                <select name="" id="" class="select" style="margin-left: 16px;width: 312px">
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择asdasdasdasdasdasd</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                    <option value="">请选择</option>
+                                </select>
+                            </div>
+                            <div class="means_Info">
+                                <span class="Info_title">毕业院校</span><input type="text" class="default_input" placeholder="请输入毕业院校">
+                            </div>
+
+                            <div id="perfect_btn">
+                                保存
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--修改结束-->
+            </div>
+            <div id="address_show" class="address_show" style="display: none">
+                <div class="address"  data-dialog="add_address"><p>新增收货地址</p></div>
+                <ul class="address_List">
+                    <li>
+                        <div class="addres_mes">
+                            <div class="address_top">
+                                <div class="user_Name">阿道夫</div>
+                                <div class="default_Address">默认收货地址</div>
+                            </div>
+                            <div class="address_delete">
+                                <img src="images/address_delete.png" alt="">
+                            </div>
+
+                            <p><span class="mes_span1" style="margin-left: 15px;">收货人 : </span><span>气味儿</span></p>
+                            <p><span class="mes_span1" >所在地区 : </span><span>北京朝阳区五环到六环之间</span></p>
+                            <p><span class="mes_span1" style="margin-left: 30px;">地址 : </span><span>北京朝阳区五环到六环之间</span></p>
+                            <p><span class="mes_span1" style="margin-left: 30px;">手机 : </span><span>1123333333</span></p>
+                            <p><span class="mes_span1" style="margin-left: 30px;">邮编 : </span><span>100011</span></p>
+                            <!--<p><span class="mes_span1">电子邮箱 : </span><span></span></p>-->
+                            <p style="float: right"><span class="default">设为默认地址</span><span class="update">编辑</span></p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="addres_mes" style="margin-top: 0px">
+                            <div class="address_top">
+                                <div class="user_Name">阿道夫</div>
+                                <!--<div class="default_Address">默认收货地址</div>-->
+                            </div>
+                            <div class="address_delete">
+                                <img src="images/address_delete.png" alt="">
+                            </div>
+
+                            <p><span class="mes_span1" style="margin-left: 15px;">收货人 : </span><span>气味儿</span></p>
+                            <p><span class="mes_span1" >所在地区 : </span><span>北京朝阳区五环到六环之间</span></p>
+                            <p><span class="mes_span1" style="margin-left: 30px;">地址 : </span><span>北京朝阳区五环到六环之间</span></p>
+                            <p><span class="mes_span1" style="margin-left: 30px;">手机 : </span><span>1123333333</span></p>
+                            <p><span class="mes_span1" style="margin-left: 30px;">邮编 : </span><span>100011</span></p>
+                            <!--<p><span class="mes_span1">电子邮箱 : </span><span></span></p>-->
+                            <p style="float: right"><span class="default">设为默认地址</span><span class="update">编辑</span></p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="show4" class="show4">
+                <div class="showbrands_top">
+                    <div class="info_left">
+                        <div class="left1">
+                            <img src="img/slide1.png"/>
+                            <div class="per_name">
+                                <p class="user" >安抚</p>
+                                <p class="signature">为自己加油，为自己呐喊。</p>
+                            </div>
+                            <div style="" class="per_price">
+                                <span>余额 : <span>24.00</span></span>
+                                <span style="margin-left:40px;">艺人币 : <span>24</span></span>
+                            </div>
+                        </div>
+                        <div class="left2">
+                            <div class="left2_div1"><p>个人家园</p></div>
+                            <!--<div class="left2_div2"><p>身份认证</p></div>-->
+                        </div>
+                    </div>
+
+                    <div class="info_right">
+                        <div class="right1"></div>
+                        <p class="p1">我的消息</p>
+                    </div>
+                </div>
+
+                <div class="showbrands_bot">
+                    <div class="bot_fir">
+                        <span class="left">我的收藏</span>
+                    </div>
+                    <div id="collect_title">
+                        <ul id="collectList">
+                            <li class="bian">设计</li>
+                            <li class="shang">商品</li>
+                            <li class="tou">投资</li>
+                        </ul>
+                    </div>
+
+                    <div style="width: 95%;margin: 10px auto;text-align: right">更多>></div>
+
+                    <div id="content">
+                    	<ul id="contentList" class="she">
+                            <li>
+                                <div class="content_img">
+                                    <img src="images/b.jpg" alt="">
+                                </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+
+                        </ul>
+
+                        <ul  class="goods" style="display: none;">
+                    		<li>
+				                <div class="images">
+				                    <img src="images/b.jpg" alt="">
+				                </div>
+				                <div class="depict">
+				                    <div class="union">联盟</div>
+				                    <p class="content">创意插座四色可吾问无为...</p>
+				                </div>
+				                <div class="xinxi">
+				                    <div class="images_shop"><img src="images/b.jpg" alt="" class="yuanhua"></div>
+				                    <div class="shop_Name">
+				                        名字名字名
+				                    </div>
+				                    <div class=" unit_price">
+				                        <span style="font-size: 12px;color: #ff0000;font-weight: normal">￥</span>199.<span style="font-size: 13px;color: #ff0000;font-weight: normal">00</span>
+				                    </div>
+				                </div>
+				                <div style="border: 0.5px dashed #999999;margin-top: 20px"></div>
+				                <div class="operation">
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 10px">2504</span>
+				                    <i class="iconfont icon-dianzan1"></i>
+				                    <span>1.2w</span>
+				
+				                </div>
+
+            				</li>
+            				<li>
+				                <div class="images">
+				                    <img src="images/b.jpg" alt="">
+				                </div>
+				                <div class="depict">
+				                    <div class="union">联盟</div>
+				                    <p class="content">创意插座四色可吾问无为...</p>
+				                </div>
+				                <div class="xinxi">
+				                    <div class="images_shop"><img src="images/b.jpg" alt="" class="yuanhua"></div>
+				                    <div class="shop_Name">
+				                        名字名字名
+				                    </div>
+				                    <div class=" unit_price">
+				                        <span style="font-size: 12px;color: #ff0000;font-weight: normal">￥</span>199.<span style="font-size: 13px;color: #ff0000;font-weight: normal">00</span>
+				                    </div>
+				                </div>
+				                <div style="border: 0.5px dashed #999999;margin-top: 20px"></div>
+				                <div class="operation">
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 10px">2504</span>
+				                    <i class="iconfont icon-dianzan1"></i>
+				                    <span>1.2w</span>
+				
+				                </div>
+
+            				</li>
+            				<li>
+				                <div class="images">
+				                    <img src="images/b.jpg" alt="">
+				                </div>
+				                <div class="depict">
+				                    <div class="union">联盟</div>
+				                    <p class="content">创意插座四色可吾问无为...</p>
+				                </div>
+				                <div class="xinxi">
+				                    <div class="images_shop"><img src="images/b.jpg" alt="" class="yuanhua"></div>
+				                    <div class="shop_Name">
+				                        名字名字名
+				                    </div>
+				                    <div class=" unit_price">
+				                        <span style="font-size: 12px;color: #ff0000;font-weight: normal">￥</span>199.<span style="font-size: 13px;color: #ff0000;font-weight: normal">00</span>
+				                    </div>
+				                </div>
+				                <div style="border: 0.5px dashed #999999;margin-top: 20px"></div>
+				                <div class="operation">
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 10px">2504</span>
+				                    <i class="iconfont icon-dianzan1"></i>
+				                    <span>1.2w</span>
+				
+				                </div>
+
+            				</li>
+            				<li>
+				                <div class="images">
+				                    <img src="images/b.jpg" alt="">
+				                </div>
+				                <div class="depict">
+				                    <div class="union">联盟</div>
+				                    <p class="content">创意插座四色可吾问无为...</p>
+				                </div>
+				                <div class="xinxi">
+				                    <div class="images_shop"><img src="images/b.jpg" alt="" class="yuanhua"></div>
+				                    <div class="shop_Name">
+				                        名字名字名
+				                    </div>
+				                    <div class=" unit_price">
+				                        <span style="font-size: 12px;color: #ff0000;font-weight: normal">￥</span>199.<span style="font-size: 13px;color: #ff0000;font-weight: normal">00</span>
+				                    </div>
+				                </div>
+				                <div style="border: 0.5px dashed #999999;margin-top: 20px"></div>
+				                <div class="operation">
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 10px">2504</span>
+				                    <i class="iconfont icon-dianzan1"></i>
+				                    <span>1.2w</span>
+				
+				                </div>
+				
+				            </li>
+            				<li>
+				                <div class="images">
+				                    <img src="images/b.jpg" alt="">
+				                </div>
+				                <div class="depict">
+				                    <div class="union">联盟</div>
+				                    <p class="content">创意插座四色可吾问无为...</p>
+				                </div>
+				                <div class="xinxi">
+				                    <div class="images_shop"><img src="images/b.jpg" alt="" class="yuanhua"></div>
+				                    <div class="shop_Name">
+				                        名字名字名
+				                    </div>
+				                    <div class=" unit_price">
+				                        <span style="font-size: 12px;color: #ff0000;font-weight: normal">￥</span>199.<span style="font-size: 13px;color: #ff0000;font-weight: normal">00</span>
+				                    </div>
+				                </div>
+				                <div style="border: 0.5px dashed #999999;margin-top: 20px"></div>
+				                <div class="operation">
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 10px">2504</span>
+				                    <i class="iconfont icon-dianzan1"></i>
+				                    <span>1.2w</span>
+				
+				                </div>
+				
+				            </li>
+                    	</ul>
+                  
+                    	<ul class="invest" style="display: none;">
+                    		<li>
+				                <div class="images">
+				                    <img src="images/b.jpg" alt="">
+				                </div>
+				                <div class="invest_time">
+				                    <div class="day">
+				                        <p>04</p>
+				                        <p>天</p>
+				                    </div>
+				                    <div class="hour">
+				                        <p>12</p>
+				                        <p>时</p>
+				                    </div>
+				                    <div class="branch">
+				                        <p>02</p>
+				                        <p>分</p>
+				                    </div>
+				                    <div class="second">
+				                        <p>30</p>
+				                        <p>秒</p>
+				                    </div>
+				                </div>
+				                <div class="depict">
+				                    <div class="union">联盟</div>
+				                    <p class="content">创意插座四色可吾问无为...</p>
+				                </div>
+				                <div class="xinxi">
+				                    <div class="operation">
+				                        <i class="iconfont icon-browse"></i>
+				                        <span style="margin-right: 10px">2504</span>
+				                    </div>
+				                    <div class=" unit_price">
+				                        <span style="font-size: 12px;color: #ff0000;font-weight: normal">￥</span>19999.<span style="font-size: 13px;color: #ff0000;font-weight: normal">00</span>
+				                    </div>
+				                </div>
+				                <div style="border: 0.5px dashed #999999;margin-top: 20px"></div>
+				                <div class="progress-out div1" style="margin-top: 15px;margin-left: 12px">
+				                    <div class="percent-show" style="left: 130px;color: #ff0000;"><span>0</span>%</div>
+				                    <div class="progress-in"></div>
+				                </div>
+				
+				
+				            </li>
+				            <li>
+				                <div class="images">
+				                    <img src="images/b.jpg" alt="">
+				                </div>
+				                <div class="invest_time">
+				                    <div class="day">
+				                        <p>04</p>
+				                        <p>天</p>
+				                    </div>
+				                    <div class="hour">
+				                        <p>12</p>
+				                        <p>时</p>
+				                    </div>
+				                    <div class="branch">
+				                        <p>02</p>
+				                        <p>分</p>
+				                    </div>
+				                    <div class="second">
+				                        <p>30</p>
+				                        <p>秒</p>
+				                    </div>
+				                </div>
+				                <div class="depict">
+				                    <div class="union">联盟</div>
+				                    <p class="content">创意插座四色可吾问无为...</p>
+				                </div>
+				                <div class="xinxi">
+				                    <div class="operation">
+				                        <i class="iconfont icon-browse"></i>
+				                        <span style="margin-right: 10px">2504</span>
+				                    </div>
+				                    <div class=" unit_price">
+				                        <span style="font-size: 12px;color: #ff0000;font-weight: normal">￥</span>19999.<span style="font-size: 13px;color: #ff0000;font-weight: normal">00</span>
+				                    </div>
+				                </div>
+				                <div style="border: 0.5px dashed #999999;margin-top: 20px"></div>
+				                <div class="progress-out div1" style="margin-top: 15px;margin-left: 12px">
+				                    <div class="percent-show" style="left: 130px;color: #ff0000;"><span>0</span>%</div>
+				                    <div class="progress-in"></div>
+				                </div>
+				
+				
+				            </li>
+				            <li>
+				                <div class="images">
+				                    <img src="images/b.jpg" alt="">
+				                </div>
+				                <div class="invest_time">
+				                    <div class="day">
+				                        <p>04</p>
+				                        <p>天</p>
+				                    </div>
+				                    <div class="hour">
+				                        <p>12</p>
+				                        <p>时</p>
+				                    </div>
+				                    <div class="branch">
+				                        <p>02</p>
+				                        <p>分</p>
+				                    </div>
+				                    <div class="second">
+				                        <p>30</p>
+				                        <p>秒</p>
+				                    </div>
+				                </div>
+				                <div class="depict">
+				                    <div class="union">联盟</div>
+				                    <p class="content">创意插座四色可吾问无为...</p>
+				                </div>
+				                <div class="xinxi">
+				                    <div class="operation">
+				                        <i class="iconfont icon-browse"></i>
+				                        <span style="margin-right: 10px">2504</span>
+				                    </div>
+				                    <div class=" unit_price">
+				                        <span style="font-size: 12px;color: #ff0000;font-weight: normal">￥</span>19999.<span style="font-size: 13px;color: #ff0000;font-weight: normal">00</span>
+				                    </div>
+				                </div>
+				                <div style="border: 0.5px dashed #999999;margin-top: 20px"></div>
+				                <div class="progress-out div1" style="margin-top: 15px;margin-left: 12px">
+				                    <div class="percent-show" style="left: 130px;color: #ff0000;"><span>0</span>%</div>
+				                    <div class="progress-in"></div>
+				                </div>
+				
+				
+				            </li>
+
+                    	</ul>
+                    </div>
+
+                </div>
+                
+            </div>
+
+			<div id="show5" class="show5" style="display: none;">
+                <div class="showbrands_top">
+                    <div class="info_left">
+                        <div class="left1">
+                            <img src="img/slide1.png"/>
+                            <div class="per_name">
+                                <p class="user" >安抚</p>
+                                <p class="signature">为自己加油，为自己呐喊。</p>
+                            </div>
+                            <div style="" class="per_price">
+                                <span>余额 : <span>24.00</span></span>
+                                <span style="margin-left:40px;">艺人币 : <span>24</span></span>
+                            </div>
+                        </div>
+                        <div class="left2">
+                            <div class="left2_div1"><p>个人家园</p></div>
+                            <!--<div class="left2_div2"><p>身份认证</p></div>-->
+                        </div>
+                    </div>
+
+                    <div class="info_right">
+                        <div class="right1"></div>
+                        <p class="p1">我的消息</p>
+                    </div>
+                </div>
+
+                <div class="showbrands_bot">
+                    <div class="bot_fir">
+                        <span class="left">我的作品</span>
+                    </div>
+                    <div style="width: 95%;margin: 10px auto;text-align: right">更多>></div>
+
+                    <div id="content">
+                        <ul id="contentList">
+                            <li>
+                                <div class="content_img">
+                                    <img src="images/b.jpg" alt="">
+                                </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                
+            </div>
+
+			<div id="show6" class="show6" style="display: none;">
+                <div class="showbrands_top">
+                    <div class="info_left">
+                        <div class="left1">
+                            <img src="img/slide1.png"/>
+                            <div class="per_name">
+                                <p class="user" >安抚</p>
+                                <p class="signature">为自己加油，为自己呐喊。</p>
+                            </div>
+                            <div style="" class="per_price">
+                                <span>余额 : <span>24.00</span></span>
+                                <span style="margin-left:40px;">艺人币 : <span>24</span></span>
+                            </div>
+                        </div>
+                        <div class="left2">
+                            <div class="left2_div1"><p>个人家园</p></div>
+                            <!--<div class="left2_div2"><p>身份认证</p></div>-->
+                        </div>
+                    </div>
+
+                    <div class="info_right">
+                        <div class="right1"></div>
+                        <p class="p1">我的消息</p>
+                    </div>
+                </div>
+
+                <div class="showbrands_bot">
+                    <div class="bot_fir">
+                        <span class="left">关注作品</span>
+                    </div>
+                    <div style="width: 95%;margin: 10px auto;text-align: right">更多>></div>
+
+                    <div id="content">
+                        <ul id="contentList">
+                            <li>
+                                <div class="content_img">
+                                    <img src="images/b.jpg" alt="">
+                                </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                
+            </div>
+
+			<div id="show7" class="show7" style="display: none;">
+                <div class="showbrands_top">
+                    <div class="info_left">
+                        <div class="left1">
+                            <img src="img/slide1.png"/>
+                            <div class="per_name">
+                                <p class="user" >安抚</p>
+                                <p class="signature">为自己加油，为自己呐喊。</p>
+                            </div>
+                            <div style="" class="per_price">
+                                <span>余额 : <span>24.00</span></span>
+                                <span style="margin-left:40px;">艺人币 : <span>24</span></span>
+                            </div>
+                        </div>
+                        <div class="left2">
+                            <div class="left2_div1"><p>个人家园</p></div>
+                            <!--<div class="left2_div2"><p>身份认证</p></div>-->
+                        </div>
+                    </div>
+
+                    <div class="info_right">
+                        <div class="right1"></div>
+                        <p class="p1">我的消息</p>
+                    </div>
+                </div>
+
+                <div class="showbrands_bot">
+                    <div class="bot_fir">
+                        <span class="left">我的投资</span>
+                    </div>
+                    <div style="width: 95%;margin: 10px auto;text-align: right">更多>></div>
+
+                    <div id="content">
+                        <ul id="contentList1">
+                            <!--<li>
+                                <div class="content_img">
+                                    <img src="images/b.jpg" alt="">
+                                </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>
+                            <li><div class="content_img">
+                                <img src="images/b.jpg" alt="">
+                            </div>
+                                <div class="miaoshu" style="display: block" >
+                                    创意插座四色可选
+                                </div>
+                                <div class="miaoshu2" style="display: none" >
+                                    <i class="iconfont icon-browse"></i>
+                                    <span style="margin-right: 10px">2504</span>
+                                    <i class="iconfont icon-dianzan1"></i>
+                                    <span>1.2W</span>
+                                </div>
+                                <div class="ban" style="display: none"><img src="images/ban.png" alt=""></div>
+                            </li>-->
+							<li>
+				                <div class="tu">
+				                    <img src="img/actcon1.png" alt="">
+				                </div>
+				                <div class="miaoshu" >
+				                    创意插座四色可选
+				                </div>
+				                <div class="mianshu2" style="display: none" >
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 20px">2504</span>
+				                    <div class="progress-out div1" style="margin-left: -18px;" >
+				                        <div class="percent-show" style="left: 102px;color: red;"><span>0</span>%</div>
+				                        <div class="progress-in"></div>
+				                    </div>
+				
+				                </div>
+				            </li>
+				            <li>
+				                <div class="tu">
+				                    <img src="img/actcon1.png" alt="">
+				                </div>
+				                <div class="miaoshu" >
+				                        创意插座四色可选
+				                </div>
+				                <div class="mianshu2" style="display: none" >
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 20px">2504</span>
+				                    <div class="progress-out div1" style="margin-left: -18px;" >
+				                        <div class="percent-show" style="left: 102px;color: red;"><span>0</span>%</div>
+				                        <div class="progress-in"></div>
+				                    </div>
+				                </div>
+				            </li>
+				            <li>
+				                <div class="tu">
+				                    <img src="img/actcon1.png" alt="">
+				                </div>
+				                <div class="miaoshu" >
+				                        创意插座四色可选
+				                </div>
+				                <div class="mianshu2" style="display: none" >
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 20px">2504</span>
+				                    <div class="progress-out div1" style="margin-left: -18px;" >
+				                        <div class="percent-show" style="left: 102px;color: red;"><span>0</span>%</div>
+				                        <div class="progress-in"></div>
+				                    </div>
+				                </div>
+				            </li>
+				            <li>
+				                <div class="tu">
+				                    <img src="img/actcon1.png" alt="">
+				                </div>
+				                <div class="miaoshu" >
+				                        创意插座四色可选
+				                </div>
+				                <div class="mianshu2" style="display: none" >
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 20px">2504</span>
+				                    <div class="progress-out div1" style="margin-left: -18px;" >
+				                        <div class="percent-show" style="left: 102px;color: red;"><span>0</span>%</div>
+				                        <div class="progress-in"></div>
+				                    </div>
+				                </div>
+				            </li>
+	                    	<li>
+				                <div class="tu">
+				                    <img src="img/actcon1.png" alt="">
+				                </div>
+				                <div class="miaoshu" >
+				                    创意插座四色可选
+				                </div>
+				                <div class="mianshu2" style="display: none" >
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 20px">2504</span>
+				                    <div class="progress-out div1" style="margin-left: -18px;" >
+				                        <div class="percent-show" style="left: 102px;color: red;"><span>0</span>%</div>
+				                        <div class="progress-in"></div>
+				                    </div>
+				
+				                </div>
+				            </li>
+				            <li>
+				                <div class="tu">
+				                    <img src="img/actcon1.png" alt="">
+				                </div>
+				                <div class="miaoshu" >
+				                        创意插座四色可选
+				                </div>
+				                <div class="mianshu2" style="display: none" >
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 20px">2504</span>
+				                    <div class="progress-out div1" style="margin-left: -18px;" >
+				                        <div class="percent-show" style="left: 102px;color: red;"><span>0</span>%</div>
+				                        <div class="progress-in"></div>
+				                    </div>
+				                </div>
+				            </li>
+				            <li>
+				                <div class="tu">
+				                    <img src="img/actcon1.png" alt="">
+				                </div>
+				                <div class="miaoshu" >
+				                        创意插座四色可选
+				                </div>
+				                <div class="mianshu2" style="display: none" >
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 20px">2504</span>
+				                    <div class="progress-out div1" style="margin-left: -18px;" >
+				                        <div class="percent-show" style="left: 102px;color: red;"><span>0</span>%</div>
+				                        <div class="progress-in"></div>
+				                    </div>
+				                </div>
+				            </li>
+				            <li>
+				                <div class="tu">
+				                    <img src="img/actcon1.png" alt="">
+				                </div>
+				                <div class="miaoshu" >
+				                        创意插座四色可选
+				                </div>
+				                <div class="mianshu2" style="display: none" >
+				                    <i class="iconfont icon-browse"></i>
+				                    <span style="margin-right: 20px">2504</span>
+				                    <div class="progress-out div1" style="margin-left: -18px;" >
+				                        <div class="percent-show" style="left: 102px;color: red;"><span>0</span>%</div>
+				                        <div class="progress-in"></div>
+				                    </div>
+				                </div>
+				            </li>
+
+                        </ul>
+                    	
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!--订单部分-->
+
+            <!--全部订单-->
+            <div class="all_Order" style="display: none">
+                <div class="order_top">
+                    <ul class="order_title_List layui-nav" style="background-color: #FFFFFF">
+                        <li class="order_times layui-nav-item ">
+                            <span>近三个月的订单</span>
+                            <img src="images/bottom_Img.png" alt="">
+
+                            <dl class="layui-nav-child">
+                                <dd><a href="">待付款</a></dd>
+                                <dd><a href="">待收货</a></dd>
+                                <dd><a href="">已完成</a></dd>
+                            </dl>
+
+                        </li>
+                        <li class="order_Details layui-nav-item">订单详情</li>
+                        <li class="order_price layui-nav-item">金额(元)</li>
+                        <li class="status layui-nav-item ">
+                            <span>全部状态</span>
+                            <img src="images/bottom_Img.png" alt="">
+                            <dl class="layui-nav-child">
+                                <dd><a href="">代付款</a></dd>
+                                <dd><a href="">待收货</a></dd>
+                                <dd><a href="">已完成</a></dd>
+                            </dl>
+                        </li>
+                        <li class="order_operation layui-nav-item">操作</li>
+                    </ul>
+                </div>
+                <div class="order_display">
+                   <div class="order_zhanshi">
+                       <div class="order_Name">
+
+                           <div class="order_shijian">
+                               2018-08-05  12:30:52
+                           </div>
+                           <div class="order_Number">
+                               订单号：123456789
+                           </div>
+
+                           <div style="display: inline-block;height: 15px;font-size: 14px;margin-left: 40px;text-align: left" >
+                               店铺名称
+                           </div>
+                           <div class="kefu_Img">
+                               <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                           </div>
+                       </div>
+                       <ul class="order_Catr_Info">
+                           <li>
+                               <div style="margin-left: 25px;">
+
+                                   <div class="order_Img">
+                                       <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                   </div>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="order_Info_neirong">
+                                   <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                       脑 MRJP2CH/A 金色</p>
+                               </div>
+                               <div class="Info_Specifications">
+                                   ROG旗舰34英寸曲面/IPS/100Hz
+                               </div>
+                           </li>
+                           <li>
+                               <div class="order_number">
+                                   ×<span>1</span>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="price">
+                                   399.00
+                               </div>
+                           </li>
+                           <li>
+                               <div class="order_status" style="display: block">
+                                   已完成
+                               </div>
+
+                           </li>
+                           <li>
+                               <div class="view_Order">
+                                  查看订单
+                               </div>
+                           </li>
+
+                       </ul>
+
+
+                       <ul class="order_Catr_Info">
+                           <li>
+                               <div style="margin-left: 25px;">
+
+                                   <div class="order_Img">
+                                       <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                   </div>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="order_Info_neirong">
+                                   <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                       脑 MRJP2CH/A 金色</p>
+                               </div>
+                               <div class="Info_Specifications">
+                                   ROG旗舰34英寸曲面/IPS/100Hz
+                               </div>
+                           </li>
+                           <li>
+                               <div class="order_number">
+                                   ×<span>1</span>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="price">
+                                   399.00
+                               </div>
+                           </li>
+                           <li>
+                               <div class="order_status" style="display: block">
+                                   已完成
+                               </div>
+
+                           </li>
+                           <li>
+                               <div class="view_Order">
+                                   查看订单
+                               </div>
+                           </li>
+
+                       </ul>
+                   </div>
+
+
+                </div>
+
+                <div class="order_display">
+                    <div class="order_zhanshi">
+                        <div class="order_Name">
+
+                            <div class="order_shijian">
+                                2018-08-05  12:30:52
+                            </div>
+                            <div class="order_Number">
+                                订单号：123456789
+                            </div>
+
+                            <div style="display: inline-block;height: 15px;font-size: 14px;margin-left: 40px;text-align: left" >
+                                店铺名称
+                            </div>
+                            <div class="kefu_Img">
+                                <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <ul class="order_Catr_Info">
+                            <li>
+                                <div style="margin-left: 25px;">
+
+                                    <div class="order_Img">
+                                        <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_Info_neirong">
+                                    <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                        脑 MRJP2CH/A 金色</p>
+                                </div>
+                                <div class="Info_Specifications">
+                                    ROG旗舰34英寸曲面/IPS/100Hz
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_number">
+                                    ×<span>1</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price">
+                                    399.00
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_status" style="display: block">
+                                    已完成
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="view_Order">
+                                    查看订单
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                        <ul class="order_Catr_Info">
+                            <li>
+                                <div style="margin-left: 25px;">
+
+                                    <div class="order_Img">
+                                        <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_Info_neirong">
+                                    <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                        脑 MRJP2CH/A 金色</p>
+                                </div>
+                                <div class="Info_Specifications">
+                                    ROG旗舰34英寸曲面/IPS/100Hz
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_number">
+                                    ×<span>1</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price">
+                                    399.00
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_status" style="display: block">
+                                    已完成
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="view_Order">
+                                    查看订单
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!--待付款-->
+            <div class="pending_Payment" style="display: none">
+                <div class="order_top">
+                    <ul class="order_title_List layui-nav" style="background-color: #FFFFFF">
+                        <li class="order_times layui-nav-item ">
+                            <span>近三个月的订单</span>
+                            <img src="images/bottom_Img.png" alt="">
+
+                            <dl class="layui-nav-child">
+                                <dd><a href="">待付款</a></dd>
+                                <dd><a href="">待收货</a></dd>
+                                <dd><a href="">已完成</a></dd>
+                            </dl>
+
+                        </li>
+                        <li class="order_Details layui-nav-item">订单详情</li>
+                        <li class="order_price layui-nav-item">金额(元)</li>
+                        <li class="status layui-nav-item ">
+                            <span>全部状态</span>
+                            <img src="images/bottom_Img.png" alt="">
+                            <dl class="layui-nav-child">
+                                <dd><a href="">代付款</a></dd>
+                                <dd><a href="">待收货</a></dd>
+                                <dd><a href="">已完成</a></dd>
+                            </dl>
+                        </li>
+                        <li class="order_operation layui-nav-item">操作</li>
+                    </ul>
+                </div>
+                <div class="order_display">
+                    <div class="order_zhanshi">
+                        <div class="order_Name">
+
+                            <div class="order_shijian">
+                                2018-08-05  12:30:52
+                            </div>
+                            <div class="order_Number">
+                                订单号：123456789
+                            </div>
+
+                            <div style="display: inline-block;height: 15px;font-size: 14px;margin-left: 40px;text-align: left" >
+                                店铺名称
+                            </div>
+                            <div class="kefu_Img">
+                                <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <div class="pending_List">
+                            <ul class="pending_order_Catr_Info">
+                                <li>
+                                    <div style="margin-left: 25px;">
+
+                                        <div class="order_Img">
+                                            <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_Info_neirong">
+                                        <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                            脑 MRJP2CH/A 金色</p>
+                                    </div>
+                                    <div class="Info_Specifications">
+                                        ROG旗舰34英寸曲面/IPS/100Hz
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_number">
+                                        ×<span>1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="price"  style="margin-top: 58px">
+                                        <p>399.00</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">在线支付</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_status" style="display: block;width: 57px;margin-top: 58px">
+                                        <p style="text-align: center">待付款</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">订单详情</p>
+                                    </div>
+
+                                </li>
+
+
+                            </ul>
+
+                            <ul class="pending_order_Catr_Info">
+                                <li>
+                                    <div style="margin-left: 25px;">
+
+                                        <div class="order_Img">
+                                            <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_Info_neirong">
+                                        <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                            脑 MRJP2CH/A 金色</p>
+                                    </div>
+                                    <div class="Info_Specifications">
+                                        ROG旗舰34英寸曲面/IPS/100Hz
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_number">
+                                        ×<span>1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="price"  style="margin-top: 58px">
+                                        <p>399.00</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">在线支付</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_status" style="display: block;width: 57px;margin-top: 58px">
+                                        <p style="text-align: center">待付款</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">订单详情</p>
+                                    </div>
+
+                                </li>
+
+
+                            </ul>
+                            <ul class="pending_order_Catr_Info">
+                                <li>
+                                    <div style="margin-left: 25px;">
+
+                                        <div class="order_Img">
+                                            <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_Info_neirong">
+                                        <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                            脑 MRJP2CH/A 金色</p>
+                                    </div>
+                                    <div class="Info_Specifications">
+                                        ROG旗舰34英寸曲面/IPS/100Hz
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_number">
+                                        ×<span>1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="price"  style="margin-top: 58px">
+                                        <p>399.00</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">在线支付</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_status" style="display: block;width: 57px;margin-top: 58px">
+                                        <p style="text-align: center">待付款</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">订单详情</p>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="view_Order" style="margin-top: 58px">
+                                        <!--<div class="pay_btn">-->
+                                        <!--&lt;!&ndash;付款&ndash;&gt;-->
+                                        <!--</div>-->
+                                        <div  style="text-align: center;font-size: 12px;color: #999999;margin-top: 5px">
+                                            <!--查看订单-->
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="payment">
+                            <div class="zong_price">
+                                <span>总计</span>
+                                <span  style="color: #ff0000;font-size: 14px">￥</span>
+                                <span style="color: #ff0000;font-size: 16px;font-weight: bold">7999.00</span>
+                            </div>
+                            <div class="wait_pay">
+                                等待付款
+                            </div>
+                            <div class="total_pay">
+                                合计付款
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="order_display">
+                    <div class="order_zhanshi">
+                        <div class="order_Name">
+
+                            <div class="order_shijian">
+                                2018-08-05  12:30:52
+                            </div>
+                            <div class="order_Number">
+                                订单号：123456789
+                            </div>
+
+                            <div style="display: inline-block;height: 15px;font-size: 14px;margin-left: 40px;text-align: left" >
+                                店铺名称
+                            </div>
+                            <div class="kefu_Img">
+                                <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <div class="pending_List">
+                            <ul class="pending_order_Catr_Info">
+                                <li>
+                                    <div style="margin-left: 25px;">
+
+                                        <div class="order_Img">
+                                            <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_Info_neirong">
+                                        <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                            脑 MRJP2CH/A 金色</p>
+                                    </div>
+                                    <div class="Info_Specifications">
+                                        ROG旗舰34英寸曲面/IPS/100Hz
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_number">
+                                        ×<span>1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="price"  style="margin-top: 58px">
+                                        <p>399.00</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">在线支付</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_status" style="display: block;width: 57px;margin-top: 58px">
+                                        <p style="text-align: center">待付款</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">订单详情</p>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="view_Order" style="margin-top: 58px">
+                                        <div class="pay_btn">
+                                            付款
+                                        </div>
+                                        <div  style="text-align: center;font-size: 12px;color: #999999;margin-top: 5px">查看订单</div>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!--待收货-->
+            <div class="received_goods" style="display: none">
+                <div class="order_top">
+                    <ul class="order_title_List layui-nav" style="background-color: #FFFFFF">
+                        <li class="order_times layui-nav-item ">
+                            <span>近三个月的订单</span>
+                            <img src="images/bottom_Img.png" alt="">
+
+                            <dl class="layui-nav-child">
+                                <dd><a href="">待付款</a></dd>
+                                <dd><a href="">待收货</a></dd>
+                                <dd><a href="">已完成</a></dd>
+                            </dl>
+
+                        </li>
+                        <li class="order_Details layui-nav-item">订单详情</li>
+                        <li class="order_price layui-nav-item">金额(元)</li>
+                        <li class="status layui-nav-item ">
+                            <span>全部状态</span>
+                            <img src="images/bottom_Img.png" alt="">
+                            <dl class="layui-nav-child">
+                                <dd><a href="">代付款</a></dd>
+                                <dd><a href="">待收货</a></dd>
+                                <dd><a href="">已完成</a></dd>
+                            </dl>
+                        </li>
+                        <li class="order_operation layui-nav-item">操作</li>
+                    </ul>
+                </div>
+                <div class="order_display">
+                    <div class="order_zhanshi">
+                        <div class="order_Name">
+
+                            <div class="order_shijian">
+                                2018-08-05  12:30:52
+                            </div>
+                            <div class="order_Number">
+                                订单号：123456789
+                            </div>
+
+                            <div style="display: inline-block;height: 15px;font-size: 14px;margin-left: 40px;text-align: left" >
+                                店铺名称
+                            </div>
+                            <div class="kefu_Img">
+                                <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <div class="pending_List">
+                            <ul class="pending_order_Catr_Info">
+                                <li>
+                                    <div style="margin-left: 25px;">
+
+                                        <div class="order_Img">
+                                            <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_Info_neirong">
+                                        <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                            脑 MRJP2CH/A 金色</p>
+                                    </div>
+                                    <div class="Info_Specifications">
+                                        ROG旗舰34英寸曲面/IPS/100Hz
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_number">
+                                        ×<span>1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="price"  style="margin-top: 58px">
+                                        <p>399.00</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">在线支付</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_status" style="display: block;width: 57px;margin-top: 58px">
+                                        <p style="text-align: center">待发货</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">订单详情</p>
+                                    </div>
+
+                                </li>
+
+
+                            </ul>
+
+                            <ul class="pending_order_Catr_Info">
+                                <li>
+                                    <div style="margin-left: 25px;">
+
+                                        <div class="order_Img">
+                                            <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_Info_neirong">
+                                        <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                            脑 MRJP2CH/A 金色</p>
+                                    </div>
+                                    <div class="Info_Specifications">
+                                        ROG旗舰34英寸曲面/IPS/100Hz
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_number">
+                                        ×<span>1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="price"  style="margin-top: 58px">
+                                        <p>399.00</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">在线支付</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_status" style="display: block;width: 57px;margin-top: 58px">
+                                        <p style="text-align: center">待发货</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">订单详情</p>
+                                    </div>
+
+                                </li>
+
+
+                            </ul>
+                            <ul class="pending_order_Catr_Info">
+                                <li>
+                                    <div style="margin-left: 25px;">
+
+                                        <div class="order_Img">
+                                            <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_Info_neirong">
+                                        <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                            脑 MRJP2CH/A 金色</p>
+                                    </div>
+                                    <div class="Info_Specifications">
+                                        ROG旗舰34英寸曲面/IPS/100Hz
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_number">
+                                        ×<span>1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="price"  style="margin-top: 58px">
+                                        <p>399.00</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">在线支付</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_status" style="display: block;width: 57px;margin-top: 58px">
+                                        <p style="text-align: center">待发货</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">订单详情</p>
+                                    </div>
+
+                                </li>
+                                <!--<li>-->
+                                    <!--<div class="view_Order" style="margin-top: 58px">-->
+                                        <!--&lt;!&ndash;<div class="pay_btn">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;&lt;!&ndash;付款&ndash;&gt;&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                        <!--<div  style="text-align: center;font-size: 12px;color: #999999;margin-top: 5px">-->
+                                            <!--&lt;!&ndash;查看订单&ndash;&gt;-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+
+                            </ul>
+
+                        </div>
+                        <div class="payment">
+                            <div class="zong_price">
+                                <span>总计</span>
+                                <span  style="color: #ff0000;font-size: 14px">￥</span>
+                                <span style="color: #ff0000;font-size: 16px;font-weight: bold">7999.00</span>
+                            </div>
+                            <div class="wait_pay">
+                                等待发货
+                            </div>
+                            <div class="total_pay">
+                                提醒发货
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="order_display">
+                    <div class="order_zhanshi">
+                        <div class="order_Name">
+
+                            <div class="order_shijian">
+                                2018-08-05  12:30:52
+                            </div>
+                            <div class="order_Number">
+                                订单号：123456789
+                            </div>
+
+                            <div style="display: inline-block;height: 15px;font-size: 14px;margin-left: 40px;text-align: left" >
+                                店铺名称
+                            </div>
+                            <div class="kefu_Img">
+                                <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <div class="pending_List">
+                            <ul class="pending_order_Catr_Info">
+                                <li>
+                                    <div style="margin-left: 25px;">
+
+                                        <div class="order_Img">
+                                            <img src="images/qh1.png" alt="" width="100%" height="100%">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_Info_neirong">
+                                        <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                            脑 MRJP2CH/A 金色</p>
+                                    </div>
+                                    <div class="Info_Specifications">
+                                        ROG旗舰34英寸曲面/IPS/100Hz
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_number">
+                                        ×<span>1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="price"  style="margin-top: 58px">
+                                        <p>399.00</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">在线支付</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order_status" style="display: block;width: 57px;margin-top: 58px">
+                                        <p style="text-align: center">待收货</p>
+                                        <p style="text-align: center;font-size: 12px;color: #999999;margin-top: 10px">订单详情</p>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="view_Order" style="margin-top: 58px">
+                                        <div class="pay_btn"     style="width: 70px;">
+                                            提醒发货
+                                        </div>
+                                        <div  style="text-align: center;font-size: 12px;color: #999999;margin-top: 5px;margin-left: 10px;">申请退款</div>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!--订单部分-->
+            
+
+
+        </div>
+
+    </div>
+
+
+    <!--弹框-->
+    <div id="add_address" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content" style="padding-left: 25px; padding-right: 432px;padding-top: 0;padding-bottom: 54px;">
+            <div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
+
+            </div>
+            <div class="dialog-inner">
+                <div id="address_dialog">
+                    <div id="address_neirong_dialog">
+                        <div class="Info_title">
+                            新增收货地址
+                        </div>
+                        <p class="xian_dialog"></p>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -182px" >
+                                <span class="zuopin_name">收货人:</span><input type="text" placeholder="请输入收货人" class="input" style="width: 350px">
+                            </div>
+                        </div>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -225px" >
+                                <span class="zuopin_name">所在地区:</span>
+                                <select name="" class="select">
+                                    <option value="">北京市</option>
+                                </select>
+                                <select name=""  class="select">
+                                    <option value="">海淀区</option>
+                                </select>
+                                <select name=""  class="select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -164px" >
+                                <span class="zuopin_name">地址:</span><input type="text" placeholder="请输入地址" class="input" style="width: 350px">
+                            </div>
+                        </div>
+                        <div class="Info_Name" style="padding-bottom: 20px;">
+                            <div style="display: inline-block;margin-left: -182px" >
+                                <span class="zuopin_name">手机号:</span><input type="text" placeholder="请输入手机号" class="input" style="width: 350px">
+                            </div>
+                        </div>
+                        <div class="Info_Name" style="margin-top: 10px;margin-bottom: 22px">
+                            <div style="display: inline-block;margin-left: -164px" >
+                                <span class="zuopin_name">邮编:</span><input type="text" placeholder="请输入邮编" class="input" style="width: 350px">
+                            </div>
+                        </div>
+                        <!--<div class="Info_Name">-->
+                            <!--<div style="display: inline-block;margin-left: -192px" >-->
+                                <!--<span class="zuopin_name">收货人:</span><input type="text" placeholder="请输入收货人" class="input" style="width: 350px">-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <p class="xian_dialog"></p>
+
+                    </div>
+                </div>
+                <div id="add_address1">
+                    <div  data-dialog-close class="btn_dialog">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="dialog" data-dialog1="updete_address" style="display: none"></button>
+    <div id="updete_address" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content" style="padding-left: 25px; padding-right: 432px;padding-top: 0;padding-bottom: 54px;">
+            <div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
+
+            </div>
+            <div class="dialog-inner">
+                <div id="updete_address_dialog">
+                    <div id="update_address_neirong_dialog">
+                        <div class="Info_title">
+                            修改收货地址
+                        </div>
+                        <p class="xian_dialog"></p>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -182px" >
+                                <span class="zuopin_name">收货人:</span><input type="text" placeholder="请输入收货人" class="input" style="width: 350px">
+                            </div>
+                        </div>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -225px" >
+                                <span class="zuopin_name">所在地区:</span>
+                                <select name="" class="select">
+                                    <option value="">北京市</option>
+                                </select>
+                                <select name=""  class="select">
+                                    <option value="">海淀区</option>
+                                </select>
+                                <select name=""  class="select">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -164px" >
+                                <span class="zuopin_name">地址:</span><input type="text" placeholder="请输入地址" class="input" style="width: 350px">
+                            </div>
+                        </div>
+                        <div class="Info_Name" style="padding-bottom: 20px;">
+                            <div style="display: inline-block;margin-left: -182px" >
+                                <span class="zuopin_name">手机号:</span><input type="text" placeholder="请输入手机号" class="input" style="width: 350px">
+                            </div>
+                        </div>
+
+                        <div class="Info_Name" style="margin-top: 10px;margin-bottom: 22px">
+                            <div style="display: inline-block;margin-left: -164px" >
+                                <span class="zuopin_name">邮编:</span><input type="text" placeholder="请输入邮编" class="input" style="width: 350px">
+                            </div>
+                        </div>
+                        <!--<div class="Info_Name">-->
+                        <!--<div style="display: inline-block;margin-left: -192px" >-->
+                        <!--<span class="zuopin_name">收货人:</span><input type="text" placeholder="请输入收货人" class="input" style="width: 350px">-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <p class="xian_dialog"></p>
+
+                    </div>
+                </div>
+                <div id="update_address">
+                    <div  data-dialog-close class="btn_dialog">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script>
+	
+    $("#collectList li").click(function () {
+        $(this).siblings('li').removeClass('bian');
+        $(this).addClass("bian");
+    });
+    
+    $(".bian").click(function(){
+    	$(".she").show();
+    	$(".goods").hide();
+    	$(".invest").hide();
+    })
+    $(".shang").click(function(){
+    	$(".she").hide();
+    	$(".goods").show();
+    	$(".invest").hide();
+    })
+    $(".tou").click(function(){
+    	$(".she").hide();
+    	$(".goods").hide();
+    	$(".invest").show();
+    })
+    
+    $("#contentList li").hover(function () {
+        $(this).find(".miaoshu").css("display","none");
+        $(this).find(".miaoshu2").css("display","block");
+        $(this).find(".ban").css("display","block");
+    },function () {
+        $(this).find(".miaoshu").css("display","block");
+        $(this).find(".miaoshu2").css("display","none");
+        $(this).find(".ban").css("display","none");
+    })
+//    修改
+    $("#shoucang").click(function () {
+        $("#shoucang").css("color","#ff0000");
+        $("#ziliao").css("color","#000000");
+        $("#guanzhu").css("color","#000000");
+        $("#receiving_Address").css("color","#000000");
+        $("#myDesigner").css("color","#000000");
+        $("#touzi").css("color","#000000");
+        $("#show4").show();
+        $("#show1").hide();
+        $("#show2").hide();
+        $("#address_show").hide();
+        $(".all_Order").hide();
+        $(".pending_Payment").hide();
+        $(".received_goods").hide();
+        $("#show5").hide();
+        $("#show6").hide();
+        $("#show7").hide();
+    });
+    $("#myDesigner").click(function () {
+        $("#myDesigner").css("color","#ff0000");
+        $("#guanzhu").css("color","#000000");
+        $("#ziliao").css("color","#000000");
+        $("#receiving_Address").css("color","#000000");
+        $("#shoucang").css("color","#000000");
+        $("#show5").show();
+        $("#show4").hide();
+        $("#show1").hide();
+        $("#show2").hide();
+        $("#address_show").hide();
+        $(".all_Order").hide();
+        $(".pending_Payment").hide();
+        $(".received_goods").hide();
+        $("#show6").hide();
+        $("#show7").hide();
+    });
+    $("#guanzhu").click(function () {
+        $("#guanzhu").css("color","#ff0000");
+        $("#ziliao").css("color","#000000");
+        $("#touzi").css("color","#000000");
+        $("#myDesigner").css("color","#000000");
+        $("#receiving_Address").css("color","#000000");
+        $("#shoucang").css("color","#000000");
+        $("#show6").show();
+        $("#show5").hide();
+        $("#show4").hide();
+        $("#show1").hide();
+        $("#show2").hide();
+        $("#address_show").hide();
+        $(".all_Order").hide();
+        $(".pending_Payment").hide();
+        $(".received_goods").hide();
+        $("#show7").hide();
+    });
+    $("#touzi").click(function () {
+        $("#touzi").css("color","#ff0000");
+        $("#ziliao").css("color","#000000");
+        $("#myDesigner").css("color","#000000");
+        $("#guanzhu").css("color","#000000");
+        $("#receiving_Address").css("color","#000000");
+        $("#shoucang").css("color","#000000");
+        $("#show7").show();
+        $("#show5").hide();
+        $("#show4").hide();
+        $("#show1").hide();
+        $("#show2").hide();
+        $("#address_show").hide();
+        $(".all_Order").hide();
+        $(".pending_Payment").hide();
+        $(".received_goods").hide();
+        $("#show6").hide();
+    });
+//修改
+    $("#ziliao").click(function () {
+        $("#shoucang").css("color","#000000");
+        $("#ziliao").css("color","#ff0000");
+        $("#receiving_Address").css("color","#000000");
+        $("#show4").hide();
+        $("#show1").hide();
+        $("#show2").show();
+        $("#address_show").hide();
+        $(".all_Order").hide();
+        $(".pending_Payment").hide();
+        $(".received_goods").hide();
+        $("#show5").hide();
+    });
+
+
+    $("#receiving_Address").click(function () {
+        $("#shoucang").css("color","#000000");
+        $("#ziliao").css("color","#000000");
+        $("#receiving_Address").css("color","#ff0000");
+        $("#show4").hide();
+        $("#show1").hide();
+        $("#show2").hide();
+        $("#address_show").show();
+        $(".all_Order").hide();
+        $(".pending_Payment").hide();
+        $(".received_goods").hide();
+        $("#show5").hide();
+    });
+
+    $(".update").click(function () {
+        $("#dialog").click();
+    });
+    $("#dingdan li").click(function () {
+        $(this).siblings('li').removeClass('bianhong');
+        $(this).addClass("bianhong");
+    });
+
+
+    var orderBase=true;
+    $("#ding").click(function () {
+        if(orderBase==true){
+            orderBase=false;
+        }else{
+            orderBase=true;
+        }
+        if(orderBase==false){
+            $("#dingdan").show();
+        }
+        if(orderBase==true){
+            $("#dingdan").hide();
+        }
+    });
+
+
+    $("#all_order").click(function () {
+        $(".all_Order").show();
+        $("#shoucang").css("color","#000000");
+        $("#ziliao").css("color","#000000");
+        $("#receiving_Address").css("color","#000000");
+        $("#show4").hide();
+        $("#show1").hide();
+        $("#show2").hide();
+        $("#address_show").hide();
+        $(".pending_Payment").hide();
+        $(".received_goods").hide();
+    })
+
+    $("#pending_Payment").click(function () {
+        $(".pending_Payment").show();
+        $(".all_Order").hide();
+        $(".received_goods").hide();
+        $("#shoucang").css("color","#000000");
+        $("#ziliao").css("color","#000000");
+        $("#receiving_Address").css("color","#000000");
+        $("#show4").hide();
+        $("#show1").hide();
+        $("#show2").hide();
+        $("#address_show").hide();
+    })
+    $("#pending_received").click(function () {
+        $(".pending_Payment").hide();
+        $(".all_Order").hide();
+        $(".received_goods").show();
+        $("#shoucang").css("color","#000000");
+        $("#ziliao").css("color","#000000");
+        $("#receiving_Address").css("color","#000000");
+        $("#show4").hide();
+        $("#show1").hide();
+        $("#show2").hide();
+        $("#address_show").hide();
+    })
+    
+
+
+</script>
+<script>
+    layui.use('laydate', function () {
+        var laydate = layui.laydate;
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#overDate' //指定元素
+        });
+    });
+    layui.use('element', function(){
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+        //监听导航点击
+        element.on('nav(demo)', function(elem){
+            //console.log(elem)
+            layer.msg(elem.text());
+        });
+    });
+</script>
+<script src="js/classie.js"></script>
+<script src="js/dialogFx.js"></script>
+<script>
+    (function() {
+        var dlgtrigger = document.querySelector( '[data-dialog]' ),
+            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+            dlg = new DialogFx( somedialog );
+        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    })();
+    (function() {
+        var dlgtrigger = document.querySelector( '[data-dialog1]' ),
+            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog1' ) ),
+            dlg = new DialogFx( somedialog );
+        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    })();
+    //    (function() {
+    //        var dlgtrigger = document.querySelector( '[data-dialog2]' ),
+    //            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog2' ) ),
+    //            dlg = new DialogFx( somedialog );
+    //        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    //    })();
+
+</script>
+
+</html>

@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding:0;
+}
+li{
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+}
+li:hover a{ text-decoration: none}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+#banner{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    -moz-box-shadow:2px 10px 20px #333333; -webkit-box-shadow:2px 10px 20px #333333; box-shadow:2px 10px 20px #999999;
+}
+/*example*/
+.example{width: 100%;height: 500px}
+.example img{
+    width: 100%;
+    height: 100%;
+}
+
+#invest{
+    width: 100%;
+    height: 1500px;
+    background-color: #EEEEEE;
+    padding-top: 20px;
+}
+#invest_neirong{
+    width: 1200px;
+    margin: 0 auto;
+}
+#investTop{
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+}
+#invest_biao{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+
+}
+#invest_biao img{
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+}
+
+#invest_biao p{
+    width: 100px;
+    height: 26px;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: 3px;
+    display:inline-block;
+    color: #f80202;
+}
+#invest_yinwen{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: -22px;
+    position: relative;
+}
+#invest_yinwen p{
+    display: inline-block;
+}
+
+#invest_yinwen .yinwen{
+    display: inline-block;
+    width: 231px;
+    height: 22px;
+    font-family: PingFang-SC-Light;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 22px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    color: #f80202;
+}
+.xian_invest_left{
+    width: 125px;
+    height: 1px;
+    background-color: #f80202;
+    position: absolute;
+    top: 26px;
+    left: 345px;
+}
+.xian_invest_right{
+    width: 125px;
+    height: 1px;
+    background-color: #f80202;
+    position: absolute;
+    top: 26px;
+    right: 345px;
+}
+#invest_zhanshi{
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+}
+#investList{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -14px;
+}
+#investList li{
+    width: 255px;
+    height: 380px;
+    margin-left: 25px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    float: left;
+    padding: 10px;
+    position: relative;
+    transition: all 0.5s  ;
+    cursor: pointer;
+}
+.tu{
+    width: 254px;
+    height: 356px;
+}
+.tu img{
+    width: 100%;
+    height: 100%;
+}
+.miaoshu{
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+    color: #666666;
+
+}
+
+
+.mianshu2{
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+    color: #666666;
+
+}
+.mianshu2 i{
+    width: 15px;
+    font-size: 16px;
+    color:red;
+}
+#investList li:hover{
+    -moz-box-shadow:2px 2px 19px #333333; -webkit-box-shadow:2px 2px 19px #333333; box-shadow:2px 2px 19px #999999;
+}
+.baifen{
+    position: absolute;
+    bottom: 4px;
+    right: 26px;
+    color: #ff0000;
+}
+.gengduo{
+    font-size: 14px;
+    color: #666666;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+#gengduo_invest:hover{
+    color:#f80202;
+}
+#gengduo_desiger:hover{
+    color: #4eacf8;
+}
+#gengduo_remai:hover{
+    color: #fdbb51;
+}
+@media screen and  (min-width: 1500px) {
+
+    #banner{
+        min-width:100%;
+    }
+
+    #invest_neirong{
+        min-width: 1200px;
+    }
+
+}
+@media screen and  (min-width: 1200px) and(max-width: 1500px)  {
+
+    #banner{
+        min-width:100%;
+    }
+
+    #invest_neirong{
+        min-width: 1200px;
+    }
+
+}
+@media screen and  (min-width: 900px) and (max-width: 1200px) {
+
+    #banner{
+        min-width: 1327px;;
+    }
+    #invest{
+        min-width: 1327px;
+    }
+    #invest_neirong{
+        min-width:1100px;
+    }
+
+}
+
+@media screen and  (max-width: 900px) {
+
+    #banner{
+        min-width: 1327px;;
+    }
+    #invest{
+        min-width: 1327px;
+    }
+    #invest_neirong{
+        min-width:1100px;
+    }
+
+}

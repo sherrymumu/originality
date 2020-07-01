@@ -1,0 +1,13 @@
+/*����*/
+
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix {zoom:1;}
+
+/*�����ʽ*/
+.poster-main{position: relative;width: 585px;height: 284px}
+.poster-main a,.poster-main img{display:block;}
+.poster-main .poster-list{width: 585px;height: 284px}
+.poster-main .poster-list .poster-item{ width: 450px;position: absolute;left: 0px;top: 0px}
+.poster-main .poster-btn{position: absolute;height: 100%;width:100px;top: 37px;z-index: 10;opacity: 0.5;}
+.poster-main .poster-prev-btn{ left: 0px; background: url("../images/btn_l.png") no-repeat center center; background-color: #000 }
+.poster-main .poster-next-btn{right: 0px;background: url("../images/btn_r.png") no-repeat center center;background-color:#000}

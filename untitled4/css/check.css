@@ -1,0 +1,803 @@
+/*自定义复选框*/
+#myCheck{
+    display: none;
+}
+#myCheck + label{
+    background-color: white;
+    border-radius: 15px;
+    border:1px solid #65C2B9;
+    width:13px;
+    height:13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+#myCheck:checked + label{
+    background-color: #65C2B9;
+}
+#myCheck:checked + label:after{
+    color: white;
+    content:"\2714";
+}
+#myCheck1 {
+    display: none;
+}
+
+#myCheck1+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck1:checked+#lab1 {
+    background-color: #65C2B9;
+}
+
+#myCheck1:checked+#lab1:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck2 {
+    display: none;
+}
+
+#myCheck2+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C3B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck2:checked+#lab2 {
+    background-color: #65C3B9;
+}
+
+#myCheck2:checked+#lab2:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck3 {
+    display: none;
+}
+
+#myCheck3+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck3:checked+#lab3 {
+    background-color: #65C2B9;
+}
+
+#myCheck3:checked+#lab3:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck4 {
+    display: none;
+}
+
+#myCheck4+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C3B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck4:checked+#lab4 {
+    background-color: #65C3B9;
+}
+
+#myCheck4:checked+#lab4:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck5 {
+    display: none;
+}
+
+#myCheck5+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck5:checked+#lab5 {
+    background-color: #65C2B9;
+}
+
+#myCheck5:checked+#lab5:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck6 {
+    display: none;
+}
+
+#myCheck6+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C3B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck6:checked+#lab6 {
+    background-color: #65C3B9;
+}
+
+#myCheck6:checked+#lab6:after {
+    color: white;
+    content: "\2714";
+}
+
+
+
+#myCheck7 {
+    display: none;
+}
+
+#myCheck7+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck7:checked+#lab7 {
+    background-color: #65C3B9;
+}
+
+#myCheck7:checked+#lab7:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck8 {
+    display: none;
+}
+
+#myCheck8+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck8:checked+#lab8 {
+    background-color: #65C3B9;
+}
+
+#myCheck8:checked+#lab8:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck9 {
+    display: none;
+}
+
+#myCheck9+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck9:checked+#lab9 {
+    background-color: #65C3B9;
+}
+
+#myCheck9:checked+#lab9:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck10 {
+    display: none;
+}
+
+#myCheck10+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck10:checked+#lab10 {
+    background-color: #65C3B9;
+}
+
+#myCheck10:checked+#lab10:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck11 {
+    display: none;
+}
+
+#myCheck11+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck11:checked+#lab11 {
+    background-color: #65C3B9;
+}
+
+#myCheck11:checked+#lab11:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck12 {
+    display: none;
+}
+
+#myCheck12+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck12:checked+#lab12 {
+    background-color: #65C3B9;
+}
+
+#myCheck12:checked+#lab12:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck13 {
+    display: none;
+}
+
+#myCheck13+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck13:checked+#lab13 {
+    background-color: #65C3B9;
+}
+
+#myCheck13:checked+#lab13:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck14 {
+    display: none;
+}
+
+#myCheck14+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck14:checked+#lab14 {
+    background-color: #65C3B9;
+}
+
+#myCheck14:checked+#lab14:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck15 {
+    display: none;
+}
+
+#myCheck15+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck15:checked+#lab15 {
+    background-color: #65C3B9;
+}
+
+#myCheck15:checked+#lab15:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck16 {
+    display: none;
+}
+
+#myCheck16+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck16:checked+#lab16 {
+    background-color: #65C3B9;
+}
+
+#myCheck16:checked+#lab16:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck17 {
+    display: none;
+}
+
+#myCheck17+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck17:checked+#lab17 {
+    background-color: #65C3B9;
+}
+
+#myCheck17:checked+#lab17:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck18 {
+    display: none;
+}
+
+#myCheck18+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck18:checked+#lab18 {
+    background-color: #65C3B9;
+}
+
+#myCheck18:checked+#lab18:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck19 {
+    display: none;
+}
+
+#myCheck19+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck19:checked+#lab19 {
+    background-color: #65C3B9;
+}
+
+#myCheck19:checked+#lab19:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck20 {
+    display: none;
+}
+
+#myCheck20+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck20:checked+#lab20 {
+    background-color: #65C3B9;
+}
+
+#myCheck20:checked+#lab20:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck21 {
+    display: none;
+}
+
+#myCheck21+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck21:checked+#lab21 {
+    background-color: #65C3B9;
+}
+
+#myCheck21:checked+#lab21:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck22 {
+    display: none;
+}
+
+#myCheck22+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck22:checked+#lab22 {
+    background-color: #65C3B9;
+}
+
+#myCheck22:checked+#lab22:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck23 {
+    display: none;
+}
+
+#myCheck23+label {
+    background-color: white;
+    border: 1px solid #65C3B9;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+#myCheck23:checked+#lab23 {
+    background-color: #65C3B9;
+}
+
+#myCheck23:checked+#lab23:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck24 {
+    display: none;
+}
+
+#myCheck24+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck24:checked+#lab24 {
+    background-color: #65C2B9;
+}
+
+#myCheck24:checked+#lab24:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck25 {
+    display: none;
+}
+
+#myCheck25+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck25:checked+#lab25 {
+    background-color: #65C2B9;
+}
+
+#myCheck25:checked+#lab25:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck26 {
+    display: none;
+}
+
+#myCheck26+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck26:checked+#lab26 {
+    background-color: #65C2B9;
+}
+
+#myCheck26:checked+#lab26:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck27 {
+    display: none;
+}
+
+#myCheck27+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck27:checked+#lab27 {
+    background-color: #65C2B9;
+}
+
+#myCheck27:checked+#lab27:after {
+    color: white;
+    content: "\2714";
+}
+#myCheck28 {
+    display: none;
+}
+
+#myCheck28+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck28:checked+#lab28 {
+    background-color: #65C2B9;
+}
+
+#myCheck28:checked+#lab28:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck29 {
+    display: none;
+}
+
+#myCheck29+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck29:checked+#lab29 {
+    background-color: #65C2B9;
+}
+
+#myCheck29:checked+#lab29:after {
+    color: white;
+    content: "\2714";
+}
+
+#myCheck30 {
+    display: none;
+}
+
+#myCheck30+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck30:checked+#lab30 {
+    background-color: #65C2B9;
+}
+
+#myCheck30:checked+#lab30:after {
+    color: white;
+    content: "\2714";
+}
+
+
+#myCheck31 {
+    display: none;
+}
+
+#myCheck31+label {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #65C2B9;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#myCheck31:checked+#lab31 {
+    background-color: #65C2B9;
+}
+
+#myCheck31:checked+#lab31:after {
+    color: white;
+    content: "\2714";
+}
+

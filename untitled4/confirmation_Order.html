@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>cylm</title>
+    <link rel="stylesheet" href="css/confirmation_Order.css">
+    <link rel="stylesheet" href="css/ystep.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!-- common styles -->
+    <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+    <!-- individual effect -->
+    <link rel="stylesheet" type="text/css" href="css/dialog-sally.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+
+
+    <script src="js/jquery.js"></script>
+
+
+</head>
+<body>
+
+  <div id="confirmation_Order">
+     <div id="confirmation_Order_content">
+         <div id="confirmation_address">
+             <div id="confirmation_address_top">
+                 <div id="address_title">选择收货地址</div>
+                 <div id="progress_Bar">
+                     <div class="stepCont stepCont2">
+                         <!-- <div class="ystep"></div> -->
+                         <div class='ystep-container ystep-lg ystep-blue'></div>
+                         <div class="pageCont">
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div id="confirmation_address_List">
+                 <div id="address">
+                     <ul id="address_List">
+                         <li>
+                             <div class="user_Name">
+                                    <div class="name">
+                                        安抚
+                                    </div>
+                                 <div class="defalut_address">
+                                      默认地址
+                                 </div>
+                             </div>
+                             <p class="con_xian"></p>
+                             <div class="address_content">
+                                 <p style="margin-top: 10px">博大路3号自主城9-504</p>
+                                 <p>北京市北京市朝阳区  <span style="margin-left: 20px">0000000</span></p>
+                                 <p>18210474584</p>
+                             </div>
+                             <div class="zip_Code">
+                                 <span  class="con_update">编辑</span>
+                             </div>
+                         </li>
+
+                         <li>
+                             <div class="user_Name">
+                                 <div class="name">
+                                     安抚
+                                 </div>
+                                 <div class="defalut_address" style="display: none">
+                                     默认地址
+                                 </div>
+                             </div>
+                             <p class="con_xian"></p>
+                             <div class="address_content">
+                                 <p style="margin-top: 10px">博大路3号自主城9-504</p>
+                                 <p>北京市北京市朝阳区  <span style="margin-left: 20px">0000000</span></p>
+                                 <p>18210474584</p>
+                             </div>
+                             <div class="zip_Code">
+                                 <span class="con_update">编辑</span>
+                             </div>
+                         </li>
+
+
+                     </ul>
+                 </div>
+
+             </div>
+             <div id="confirmation_address_bottom">
+                 <span id="management_Address">管理收货地址</span>
+                 <span id="new_Address" data-dialog="add_address">使用新地址</span>
+             </div>
+         </div>
+         <div id="confirmation_shop">
+            <div id="confirmation_shop_top">
+                确认商品信息
+            </div>
+             <div id="shop_Content">
+                   <div id="info">
+                       信息
+                   </div>
+                   <div id="price">
+                       单价（元）
+                   </div>
+                 <div id="number">
+                     数量
+                 </div>
+                 <div id="small_Plan">
+                     小计（元）
+                 </div>
+             </div>
+             <div class="shopping_Info_Zhanshi">
+                 <div class="shopping_Name">
+                     <div style="display: inline-block;height: 15px;font-size: 14px" >
+                         店铺名称
+                     </div>
+                     <div class="kefu_Img">
+                         <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                     </div>
+                 </div>
+                 <ul class="shopping_Catr_Info">
+                     <li>
+                         <div style="margin-left: 47px;">
+
+                             <div class="shopping_Img">
+                                 <img src="images/qh1.png" alt="" width="100%" height="100%">
+                             </div>
+                         </div>
+                     </li>
+                     <li>
+                         <div class="Info_neirong">
+                             <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                 脑 MRJP2CH/A 金色</p>
+                         </div>
+                         <div class="Info_Specifications">
+                             ROG旗舰34英寸曲面/IPS/100Hz
+                         </div>
+                     </li>
+                     <li>
+                         <div class="price">
+                             399.00
+                         </div>
+                     </li>
+                     <li>
+                         <div class="design_number" style="display: block">
+                             1
+                         </div>
+                         <!--<div class="shop_number" style="display: none">-->
+                             <!--<div class="reduce">-</div>-->
+                             <!--<div class="sum">1</div>-->
+                             <!--<div class="plus">+</div>-->
+                         <!--</div>-->
+                     </li>
+                     <li>
+                         <div class="small_Plan">
+                             399.00
+                         </div>
+                     </li>
+
+                 </ul>
+
+
+                 <ul class="shopping_Catr_Info">
+                     <li>
+                         <div style="margin-left: 47px;">
+
+                             <div class="shopping_Img">
+                                 <img src="images/qh1.png" alt="" width="100%" height="100%">
+                             </div>
+                         </div>
+                     </li>
+                     <li>
+                         <div class="Info_neirong">
+                             <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                 脑 MRJP2CH/A 金色</p>
+                         </div>
+                         <div class="Info_Specifications">
+                             ROG旗舰34英寸曲面/IPS/100Hz
+                         </div>
+                     </li>
+                     <li>
+                         <div class="price">
+                             399.00
+                         </div>
+                     </li>
+                     <li>
+                         <div class="design_number" >
+                             1
+                         </div>
+                         <!--<div class="shop_number" style="display: none">-->
+                         <!--<div class="reduce">-</div>-->
+                         <!--<div class="number">1</div>-->
+                         <!--<div class="plus">+</div>-->
+                         <!--</div>-->
+                     </li>
+                     <li>
+                         <div class="small_Plan">
+                             399.00
+                         </div>
+                     </li>
+
+                 </ul>
+
+             </div>
+
+
+             <div class="shopping_Info_Zhanshi">
+                 <div class="shopping_Name">
+                     <div style="display: inline-block;height: 15px;font-size: 14px" >
+                         店铺名称
+                     </div>
+                     <div class="kefu_Img">
+                         <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                     </div>
+                 </div>
+                 <ul class="shopping_Catr_Info">
+                     <li>
+                         <div style="margin-left: 47px;">
+
+                             <div class="shopping_Img">
+                                 <img src="images/qh1.png" alt="" width="100%" height="100%">
+                             </div>
+                         </div>
+                     </li>
+                     <li>
+                         <div class="Info_neirong">
+                             <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                 脑 MRJP2CH/A 金色</p>
+                         </div>
+                         <div class="Info_Specifications">
+                             ROG旗舰34英寸曲面/IPS/100Hz
+                         </div>
+                     </li>
+                     <li>
+                         <div class="price">
+                             399.00
+                         </div>
+                     </li>
+                     <li>
+                         <div class="design_number" style="display: block">
+                             1
+                         </div>
+                         <!--<div class="shop_number" style="display: none">-->
+                         <!--<div class="reduce">-</div>-->
+                         <!--<div class="sum">1</div>-->
+                         <!--<div class="plus">+</div>-->
+                         <!--</div>-->
+                     </li>
+                     <li>
+                         <div class="small_Plan">
+                             399.00
+                         </div>
+                     </li>
+
+                 </ul>
+
+
+                 <ul class="shopping_Catr_Info">
+                     <li>
+                         <div style="margin-left: 47px;">
+
+                             <div class="shopping_Img">
+                                 <img src="images/qh1.png" alt="" width="100%" height="100%">
+                             </div>
+                         </div>
+                     </li>
+                     <li>
+                         <div class="Info_neirong">
+                             <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板电脑 MRJP2CH/A 金色平板电
+                                 脑 MRJP2CH/A 金色</p>
+                         </div>
+                         <div class="Info_Specifications">
+                             ROG旗舰34英寸曲面/IPS/100Hz
+                         </div>
+                     </li>
+                     <li>
+                         <div class="price">
+                             399.00
+                         </div>
+                     </li>
+                     <li>
+                         <div class="design_number" >
+                             1
+                         </div>
+                         <!--<div class="shop_number" style="display: none">-->
+                         <!--<div class="reduce">-</div>-->
+                         <!--<div class="number">1</div>-->
+                         <!--<div class="plus">+</div>-->
+                         <!--</div>-->
+                     </li>
+                     <li>
+                         <div class="small_Plan">
+                             399.00
+                         </div>
+                     </li>
+
+                 </ul>
+
+             </div>
+         </div>
+         <div id="remarks">
+             <div id="remarks_content">
+                 <span style="margin-left: 20px;font-size: 14px">备注:</span>
+                 <input type="text" class="default_input" placeholder="补充填写其他信息，如有快递不到也请备注留言">
+             </div>
+             <div id="express_Fee">
+                 快递运费：<span>0.00</span>
+             </div>
+         </div>
+         <div id="total">
+             合计：<span>￥798.00</span>
+         </div>
+         <div id="confirmation_bottom">
+             <div id="goBack_shopCart">
+                 <img src="images/left.png" alt="">
+                 <span>返回购物车</span>
+             </div>
+             <div id="payment">
+                 <div id="payment_Info">
+                     共有<span style="color: #ff0000;font-size: 14px;"> 2</span>
+                     件商品，总计：<span style="color: #ff0000;font-size: 14px;">￥</span>
+                     <span style="color: #ff0000;font-size: 18px;font-weight: bold">798.00</span>
+                 </div>
+                 <div id="payment_btn">
+                     确认并付款
+                 </div>
+             </div>
+         </div>
+     </div>
+  </div>
+
+
+
+  <div id="add_address" class="dialog" style="z-index: 9">
+      <div class="dialog__overlay" ></div>
+      <div class="dialog__content" style="padding-left: 25px; padding-right: 432px;padding-top: 0;padding-bottom: 54px;">
+          <div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
+
+          </div>
+          <div class="dialog-inner">
+              <div id="address_dialog">
+                  <div id="address_neirong_dialog">
+                      <div class="Info_title">
+                          新增收货地址
+                      </div>
+                      <p class="xian_dialog"></p>
+                      <div class="Info_Name">
+                          <div style="display: inline-block;margin-left: -182px" >
+                              <span class="zuopin_name">收货人:</span><input type="text" placeholder="请输入收货人" class="input" style="width: 350px">
+                          </div>
+                      </div>
+                      <div class="Info_Name">
+                          <div style="display: inline-block;margin-left: -225px" >
+                              <span class="zuopin_name">所在地区:</span>
+                              <select name="" class="select">
+                                  <option value="">北京市</option>
+                              </select>
+                              <select name=""  class="select">
+                                  <option value="">海淀区</option>
+                              </select>
+                              <select name=""  class="select">
+                                  <option value=""></option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="Info_Name">
+                          <div style="display: inline-block;margin-left: -164px" >
+                              <span class="zuopin_name">地址:</span><input type="text" placeholder="请输入地址" class="input" style="width: 350px">
+                          </div>
+                      </div>
+                      <div class="Info_Name" style="padding-bottom: 20px;">
+                          <div style="display: inline-block;margin-left: -182px" >
+                              <span class="zuopin_name">手机号:</span><input type="text" placeholder="请输入手机号" class="input" style="width: 350px">
+                          </div>
+                      </div>
+                      <div class="Info_Name" style="margin-top: 10px;margin-bottom: 22px">
+                          <div style="display: inline-block;margin-left: -164px" >
+                              <span class="zuopin_name">邮编:</span><input type="text" placeholder="请输入邮编" class="input" style="width: 350px">
+                          </div>
+                      </div>
+                      <!--<div class="Info_Name">-->
+                      <!--<div style="display: inline-block;margin-left: -192px" >-->
+                      <!--<span class="zuopin_name">收货人:</span><input type="text" placeholder="请输入收货人" class="input" style="width: 350px">-->
+                      <!--</div>-->
+                      <!--</div>-->
+
+                      <p class="xian_dialog"></p>
+
+                  </div>
+              </div>
+              <div id="add_address1">
+                  <div  data-dialog-close class="btn_dialog">保存</div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <button id="dialog" data-dialog1="updete_address" style="display: none"></button>
+  <div id="updete_address" class="dialog" style="z-index: 9">
+      <div class="dialog__overlay"></div>
+      <div class="dialog__content" style="padding-left: 25px; padding-right: 432px;padding-top: 0;padding-bottom: 54px;">
+          <div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
+
+          </div>
+          <div class="dialog-inner">
+              <div id="updete_address_dialog">
+                  <div id="update_address_neirong_dialog">
+                      <div class="Info_title">
+                          修改收货地址
+                      </div>
+                      <p class="xian_dialog"></p>
+                      <div class="Info_Name">
+                          <div style="display: inline-block;margin-left: -182px" >
+                              <span class="zuopin_name">收货人:</span><input type="text" placeholder="请输入收货人" class="input" style="width: 350px">
+                          </div>
+                      </div>
+                      <div class="Info_Name">
+                          <div style="display: inline-block;margin-left: -225px" >
+                              <span class="zuopin_name">所在地区:</span>
+                              <select name="" class="select">
+                                  <option value="">北京市</option>
+                              </select>
+                              <select name=""  class="select">
+                                  <option value="">海淀区</option>
+                              </select>
+                              <select name=""  class="select">
+                                  <option value=""></option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="Info_Name">
+                          <div style="display: inline-block;margin-left: -164px" >
+                              <span class="zuopin_name">地址:</span><input type="text" placeholder="请输入地址" class="input" style="width: 350px">
+                          </div>
+                      </div>
+                      <div class="Info_Name" style="padding-bottom: 20px;">
+                          <div style="display: inline-block;margin-left: -182px" >
+                              <span class="zuopin_name">手机号:</span><input type="text" placeholder="请输入手机号" class="input" style="width: 350px">
+                          </div>
+                      </div>
+
+                      <div class="Info_Name" style="margin-top: 10px;margin-bottom: 22px">
+                          <div style="display: inline-block;margin-left: -164px" >
+                              <span class="zuopin_name">邮编:</span><input type="text" placeholder="请输入邮编" class="input" style="width: 350px">
+                          </div>
+                      </div>
+                      <!--<div class="Info_Name">-->
+                      <!--<div style="display: inline-block;margin-left: -192px" >-->
+                      <!--<span class="zuopin_name">收货人:</span><input type="text" placeholder="请输入收货人" class="input" style="width: 350px">-->
+                      <!--</div>-->
+                      <!--</div>-->
+
+                      <p class="xian_dialog"></p>
+
+                  </div>
+              </div>
+              <div id="update_address">
+                  <div  data-dialog-close class="btn_dialog">保存</div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</body>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src=js/setStep.js></script>
+<script>
+    var step2=new SetStep({
+        content:'.stepCont2',
+        clickAble:false
+    })
+
+</script>
+<script src="js/classie.js"></script>
+<script src="js/dialogFx.js"></script>
+<script>
+    (function() {
+        var dlgtrigger = document.querySelector( '[data-dialog]' ),
+            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+            dlg = new DialogFx( somedialog );
+        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    })();
+    (function() {
+        var dlgtrigger = document.querySelector( '[data-dialog1]' ),
+            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog1' ) ),
+            dlg = new DialogFx( somedialog );
+        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    })();
+
+    $(".con_update").click(function () {
+        $("#dialog").click();
+    })
+
+    //    (function() {
+    //        var dlgtrigger = document.querySelector( '[data-dialog2]' ),
+    //            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog2' ) ),
+    //            dlg = new DialogFx( somedialog );
+    //        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    //    })();
+
+</script>
+</html>

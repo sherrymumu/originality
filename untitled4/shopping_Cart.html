@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>cylm</title>
+    <link rel="stylesheet" href="css/shopping_Cart.css">
+    <link rel="stylesheet" href="css/carts.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/carts.js"></script>
+</head>
+<body>
+   <div id="shoppingCart_content">
+     <div id="shoppingCart">
+         <div id="shoppingCart_title">
+             <ul id="shoppingCart_title_List">
+                 <li class="yinying" style="border-top-left-radius: 10px">设计 <span>(8)</span></li>
+                 <li>商品 <span>(8)</span></li>
+                 <li>投资 <span>(8)</span></li>
+             </ul>
+         </div>
+         <div id="shoppingCart_Info">
+             <ul id="shopping_Cart_Info_List">
+                 <li id="total_Selection">
+                     <div style="display: inline-block;height: 15px" >
+                         <input type="checkbox" id="all" class="whole_check">
+                         <label for="all"></label>
+                         全选
+                     </div>
+                 </li>
+                 <li id="Info">
+                     信息
+                 </li>
+                 <li id="price">
+                     单价(元)
+                 </li>
+                 <li id="number">数量</li>
+                 <li id="subtotal">小计(元)</li>
+                 <li id="operation">操作</li>
+             </ul>
+         </div>
+         <div class="shopping_Info_Zhanshi">
+             <div class="shopping_Name">
+                 <div style="display: inline-block;height: 15px" >
+                     <input type="checkbox" id="shop_a" class="shopChoice">
+                     <label for="shop_a" class="shop"  style="margin-right: 10px;"></label>店铺名称
+                 </div>
+                 <div class="kefu_Img">
+                     <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                 </div>
+             </div>
+             <ul class="shopping_Catr_Info">
+                 <li>
+                     <div style="margin-left: 47px;">
+                         <div class="checkbox" >
+                             <input type="checkbox" id="checkbox_2" class="son_check">
+                             <label for="checkbox_2"></label>
+                         </div>
+                         <div class="shopping_Img">
+                             <img src="images/qh1.png" alt="" width="100%" height="100%">
+                         </div>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="Info_neirong">
+                         <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板
+                             电脑 MRJP2CH/A 金色</p>
+                     </div>
+                     <div class="Info_Specifications">
+                         ROG旗舰34英寸曲面/IPS/100Hz
+                     </div>
+                 </li>
+                 <li>
+                     <div class="price">
+                           399.00
+                     </div>
+                 </li>
+                 <li>
+                     <div class="design_number" style="display: block">
+                         1
+                     </div>
+                     <div class="shop_number" style="display: none">
+                         <div class="reduce">-</div>
+                         <div class="sum">1</div>
+                         <div class="plus">+</div>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="small_Plan">
+                         399.00
+                     </div>
+                 </li>
+                 <li>
+                     <div class="shop_delete">
+                         删除
+                     </div>
+                 </li>
+             </ul>
+
+
+             <ul class="shopping_Catr_Info">
+                 <li>
+                     <div style="margin-left: 47px;">
+                         <div class="checkbox" >
+                             <input type="checkbox" id="checkbox_3" class="son_check">
+                             <label for="checkbox_3"></label>
+                         </div>
+                         <div class="shopping_Img">
+                             <img src="images/qh1.png" alt="" width="100%" height="100%">
+                         </div>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="Info_neirong">
+                         <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板
+                             电脑 MRJP2CH/A 金色</p>
+                     </div>
+                     <div class="Info_Specifications">
+                         ROG旗舰34英寸曲面/IPS/100Hz
+                     </div>
+                 </li>
+                 <li>
+                     <div class="price">
+                         399.00
+                     </div>
+                 </li>
+                 <li>
+                     <div class="design_number" >
+                         1
+                     </div>
+                     <!--<div class="shop_number" style="display: none">-->
+                         <!--<div class="reduce">-</div>-->
+                         <!--<div class="number">1</div>-->
+                         <!--<div class="plus">+</div>-->
+                     <!--</div>-->
+                 </li>
+                 <li>
+                     <div class="small_Plan">
+                         399.00
+                     </div>
+                 </li>
+                 <li>
+                     <div class="shop_delete">
+                         删除
+                     </div>
+                 </li>
+             </ul>
+
+         </div>
+
+
+         <div class="shopping_Info_Zhanshi">
+             <div class="shopping_Name">
+                 <div style="display: inline-block;height: 15px" >
+                     <input type="checkbox" id="shop_b" class="shopChoice">
+                     <label for="shop_b" class="shop"  style="margin-right: 10px;"></label>店铺名称
+                 </div>
+                 <div class="kefu_Img">
+                     <img src="images/kefu_Img.png" alt="" width="100%" height="100%">
+                 </div>
+             </div>
+             <ul class="shopping_Catr_Info">
+                 <li>
+                     <div style="margin-left: 47px;">
+                         <div class="checkbox" >
+                             <input type="checkbox" id="checkbox_4" class="son_check">
+                             <label for="checkbox_4"></label>
+                         </div>
+                         <div class="shopping_Img">
+                             <img src="images/qh1.png" alt="" width="100%" height="100%">
+                         </div>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="Info_neirong">
+                         <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板
+                             电脑 MRJP2CH/A 金色</p>
+                     </div>
+                     <div class="Info_Specifications">
+                         ROG旗舰34英寸曲面/IPS/100Hz
+                     </div>
+                 </li>
+                 <li>
+                     <div class="price">
+                         399.00
+                     </div>
+                 </li>
+                 <li>
+                     <div class="design_number" style="display: block">
+                         1
+                     </div>
+                     <div class="shop_number" style="display: none">
+                         <div class="reduce">-</div>
+                         <div class="sum">1</div>
+                         <div class="plus">+</div>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="small_Plan">
+                         399.00
+                     </div>
+                 </li>
+                 <li>
+                     <div class="shop_delete">
+                         删除
+                     </div>
+                 </li>
+             </ul>
+
+
+             <ul class="shopping_Catr_Info">
+                 <li>
+                     <div style="margin-left: 47px;">
+                         <div class="checkbox" >
+                             <input type="checkbox" id="checkbox_5" class="son_check">
+                             <label for="checkbox_5"></label>
+                         </div>
+                         <div class="shopping_Img">
+                             <img src="images/qh1.png" alt="" width="100%" height="100%">
+                         </div>
+                     </div>
+                 </li>
+                 <li>
+                     <div class="Info_neirong">
+                         <p>Apple 2018年新款iPad 128G 9.7英寸 WIFI版 平板
+                             电脑 MRJP2CH/A 金色</p>
+                     </div>
+                     <div class="Info_Specifications">
+                         ROG旗舰34英寸曲面/IPS/100Hz
+                     </div>
+                 </li>
+                 <li>
+                     <div class="price">
+                         399.00
+                     </div>
+                 </li>
+                 <li>
+                     <div class="design_number" >
+                         1
+                     </div>
+                     <!--<div class="shop_number" style="display: none">-->
+                     <!--<div class="reduce">-</div>-->
+                     <!--<div class="number">1</div>-->
+                     <!--<div class="plus">+</div>-->
+                     <!--</div>-->
+                 </li>
+                 <li>
+                     <div class="small_Plan">
+                         399.00
+                     </div>
+                 </li>
+                 <li>
+                     <div class="shop_delete">
+                         删除
+                     </div>
+                 </li>
+             </ul>
+
+         </div>
+
+
+     </div>
+     <div id="check_Out">
+        <div id="check_Out_Info">
+            <div id="check_left">
+                <ul id="check_left_List">
+                    <li style="padding-left: 80px;padding-top: 17px">
+                        <div style="display: inline-block;height: 15px" >
+                            <input type="checkbox" id="all1" class="whole_check">
+                            <label for="all1"></label>
+                            全选
+                        </div>
+                    </li>
+                    <li>
+                        删除
+                    </li>
+                    <li>
+                        清空失效商品
+                    </li>
+                    <li>
+                        移入收藏
+                    </li>
+                </ul>
+            </div>
+            <div id="check_right">
+                <div id="check_right_price">
+                    <span>共有</span><span style="color: #ff0000" class="piece_num">0</span><span>件商品，总计</span><span style="color: #ff0000;font-size: 12px">￥</span><span style="color: #ff0000;font-size: 16px;font-weight: bold;width: 50px;margin-left: 20px;text-align: right"  class="total_text">0</span>
+                </div>
+                <div id="payment">
+                    去付款
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+   </div>
+</body>
+
+<script>
+    $("#shoppingCart_title_List li").click(function () {
+        $(this).siblings('li').removeClass('yinying');
+        $(this).addClass("yinying");
+    });
+</script>
+
+</html>

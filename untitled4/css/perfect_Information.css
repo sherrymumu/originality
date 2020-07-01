@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#perfect{
+
+    height: 100%;
+    background-color: #EEEEEE;
+}
+#perfect_Information{
+    width: 1200px;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#perfect_top{
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+
+    line-height: 60px;
+    color: #333333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-box-shadow:2px 10px 20px #333333; -webkit-box-shadow:2px 10px 20px #333333; box-shadow:2px 10px 20px #999999;
+}
+#perfect_content{
+    width: 100%;
+}
+.means_Info{
+    margin-left: 2em;
+    margin-top: 20px;
+}
+.Info_title{
+    width: 70px;
+    height: 16px;
+    font-family: PingFang-SC-Regular;
+    font-size: 14px;
+    line-height: 30px;
+    color: #999999;
+    text-align: right;
+    display: inline-block;
+}
+.Info_neirong{
+    width: 87px;
+    height: 16px;
+    font-family: PingFang-SC-Regular;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+    margin-left: 20px;
+}
+.default_input {
+    width: 300px;
+    height: 44px;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    font-family: "MicrosoftYaHei";
+    margin-left: 20px;
+    padding-left:10px;
+}
+#perfect_img{
+    margin-left: 25px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#perfect_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.textarea{
+    width: 300px;
+    height: 125px;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    font-family: "MicrosoftYaHei";
+    margin-left: 20px;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#perfect_btn{
+    width: 82px;
+    height: 40px;
+    background-image: linear-gradient(180deg,
+    #ff416c 0%,
+    #ff4b2b 100%),
+    linear-gradient(
+            #333333,
+            #333333);
+    background-blend-mode: normal,
+    normal;
+    border-radius: 10px;
+    margin-left: 193px;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+input::-webkit-input-placeholder {
+    color: #999999;
+    font-size: 12px;
+    text-align: left;
+}
+.textarea::-webkit-input-placeholder{
+    color: #999999;
+    font-size: 12px;
+}
+.select{
+    width: 300px;
+    height: 44px;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    font-family: "MicrosoftYaHei";
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+option::-ms-expand{ display: none; }
+option{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+
+}
+/* --背景色字体颜色--*/
+option:hover{
+    color:#fff;
+    background-color:#1E90FF;
+}
+
+@media screen and  (min-width: 1500px) {
+
+    #perfect{
+        min-width:100%;
+    }
+    #perfect_Information{
+        min-width:1200px;
+    }
+
+}
+@media screen and  (min-width: 1200px) and(max-width: 1500px)  {
+
+    #perfect{
+        min-width:100%;
+    }
+    #perfect_Information{
+        min-width:1200px;
+    }
+
+}
+@media screen and  (min-width: 900px) and (max-width: 1200px) {
+
+    #perfect{
+        min-width:1500px;
+    }
+    #perfect_Information{
+        min-width:1200px;
+    }
+
+}
+
+@media screen and  (max-width: 900px) {
+
+    #perfect{
+        min-width: 1500px;;
+    }
+    #perfect_Information{
+        min-width:1200px;
+    }
+
+
+}

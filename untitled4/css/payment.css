@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#payment{
+    height: 100%;
+    background-color: #EEEEEE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#content{
+    width: 1200px;
+    height: 693px;
+    background-color: #ffffff;
+    margin:auto;
+
+}
+#tishi{
+    width: 1011px;
+    height: 30px;
+    margin-left: 87px;
+    padding-top: 95px;
+}
+#tishi #tishi1{
+    width: 279px;
+    height: 21px;
+    font-family: PingFang-SC-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    float: left;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #000000;
+    display: inline-block;
+}
+#pay{
+    width: 130px;
+    height: 20px;
+    font-family: PingFang-SC-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    float: right;
+    line-height: 30px;
+    letter-spacing: 0px;
+    display: inline-block;
+    color: #666666;
+}
+#dingdan_Info{
+    width: 957px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 87px;
+}
+#dingdan_Info #dingdan_Card{
+    width: 154px;
+    height: 16px;
+    font-family: PingFang-SC-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: 0px;
+    display: inline-block;
+    float: left;
+    color: #666666;
+}
+#xiangqing{
+    width: 72px;
+    height: 17px;
+    font-family: PingFang-SC-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    float: right;
+    letter-spacing: 0px;
+    color: #000000;
+    display: inline-block;
+}
+#wechat {
+    width: 1033px;
+    height: 383px;
+    margin: 20px auto;
+    border: solid 1px #dcdcdc;
+}
+#wechat_title{
+    width: 100%;
+    height: 55px;
+}
+#wechat_Info{
+    width: 1033px;
+    height: 328px;
+    background-color: #eeeeee;
+    position: relative;
+}
+#saomiao{
+    width: 436px;
+    height: 268px;
+    display: inline-block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+#saomiao img{
+    margin-top: 50px;
+    margin-left: 134px;
+
+}
+#saomiao_info{
+    width: 436px;
+    display: inline-block;
+
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    text-align: center;
+    padding-top: 60px;
+    color: #999999;
+}
+#zhifubao_title{
+    width: 1033px;
+    height: 55px;
+    margin: 20px auto;
+    border: solid 1px #dcdcdc;
+}
+
+@media screen and  (min-width: 1500px) {
+
+    #payment{
+        min-width:100%;
+    }
+    #content{
+        min-width:1200px;
+    }
+
+}
+@media screen and  (min-width: 1200px) and(max-width: 1500px)  {
+
+    #payment{
+        min-width:100%;
+    }
+    #content{
+        min-width:1200px;
+    }
+
+}
+@media screen and  (min-width: 900px) and (max-width: 1200px) {
+
+    #payment{
+        min-width:1327px;
+    }
+    #content{
+        min-width:1327px;
+    }
+
+}
+
+@media screen and  (max-width: 900px) {
+
+    #payment{
+        min-width: 1327px;;
+    }
+    #content{
+        min-width:1327px;
+    }
+}

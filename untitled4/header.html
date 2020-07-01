@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>cylm</title>
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/xiala.js"></script>
+
+</head>
+<body>
+<div id="head">
+    <div id="top">
+        <div id="top_title">
+            <ul id="top_title_list">
+                <li class="drop" id="child1">请登录
+                    <ul class="sub_menu">
+                        <li style="display: block; "><a href="#">申请认证</a></li>
+                        <li style="display: block; "><a href="#">完善资料</a></li>
+                        <li style="display: block"><a href="#">退出</a></li>
+                    </ul>
+                </li>
+                <li>注册</li>
+                <li id="child3">
+                    <img src="img/shoppingTrolley.png" alt="" />
+                    <span>我的购物车</span>
+                </li>
+                <li id="child4">
+                    <img src="images/shouji.png" alt="">
+                    <span>移动端</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="log_content">
+        <div id="log_left">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div id="log_right">
+            <div id="log_title">
+                <ul class="headul">
+                    <li><a href="index.html">首页</a>
+                    </li>
+                    <li><a href="designer.html">设计</a></li>
+                    <li><a href="shopping_Mall.html">商城</a></li>
+                    <li><a href="#">投资</a></li>
+                    <li><a href="#">合作</a></li>
+                    <li><a href="#">艺人链</a></li>
+                    <li><a href="#">版权申请</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#" class="activite">上传作品</a></li>
+                    <li> <div id="sousuo"> <i class="iconfont icon-sousuo"></i></div></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    $(".headul li").click(function () {
+        $(this).siblings('li').removeClass('bian');
+        $(this).addClass("bian");
+    })
+</script>
+</html>

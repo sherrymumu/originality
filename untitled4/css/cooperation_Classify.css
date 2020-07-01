@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+#centent{
+    height: 100%;
+    background-color: #EEEEEE;
+}
+#Type{
+    width: 1200px;
+    margin: 20px auto;
+}
+#fen{
+    width: 10%;
+    height: 80px;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    line-height: 80px;
+    text-align: center;
+    color: #333333;
+    display: inline-block;
+}
+#TypeName{
+    width: 87%;
+    height: 80px;
+    display: inline-block;
+}
+#TypeName #TypeList{
+    width: 100%;
+    height: 100%;
+
+}
+#TypeName #TypeList li{
+    width: 78px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: 0;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    border: solid 1px #CACACA;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+/*#TypeName #TypeList li:first-child{*/
+
+/*background-image: linear-gradient(0deg,*/
+/*#ff4b2b 0%,*/
+/*#ff416c 100%),*/
+/*linear-gradient(0deg,*/
+/*#e10019 0%,*/
+/*#00601b 100%);*/
+/*background-blend-mode: normal,*/
+/*normal;*/
+/*border-radius: 10px;*/
+/*border: solid 1px #CACACA;*/
+/*color: #FFFFFF;*/
+/*}*/
+.bian{
+    background-image: linear-gradient(0deg,
+    #ff4b2b 0%,
+    #ff416c 100%),
+    linear-gradient(0deg,
+            #e10019 0%,
+            #00601b 100%);
+    background-blend-mode: normal,
+    normal;
+    border-radius: 10px;
+    border: solid 1px #CACACA;
+    color: #FFFFFF;
+}
+.more{
+    color: #FFFFFF;
+    border-color: red;
+}
+#colligate{
+    width: 1200px;
+    margin: 20px auto;
+    height: 80px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+#colligate #zonghe{
+    width: 10%;
+    height: 80px;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    line-height: 80px;
+    text-align: center;
+
+    color: #333333;
+    display: inline-block;
+}
+
+#zonghe:hover{
+    -moz-box-shadow:2px 10px 20px #333333; -webkit-box-shadow:2px 10px 20px #333333; box-shadow:2px 10px 20px #999999;
+}
+
+#colligate #colligateName{
+    width: 87%;
+    height: 80px;
+    display: inline-block;
+}
+
+
+#sales_volume{
+    width: 87px;
+    height: 80px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #333333;
+    display: inline-block;
+    cursor: pointer;
+}
+#sales_volume:hover{
+    -moz-box-shadow:2px 10px 20px #333333; -webkit-box-shadow:2px 10px 20px #333333; box-shadow:2px 10px 20px #999999;
+}
+#comment{
+    width: 87px;
+    height: 80px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #333333;
+    margin-right: 20px;
+    display: inline-block;
+}
+#price{
+    width: 87px;
+    height: 80px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #333333;
+    margin-right: 20px;
+    display: inline-block;
+
+}
+
+#pricezhanshi{
+    width: 172px;
+    height: 230px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    -moz-box-shadow:2px 10px 20px #333333; -webkit-box-shadow:2px 10px 20px #333333; box-shadow:2px 10px 20px #999999;
+}
+#pricezhanshi #priceList{
+    width: 172px;
+    height: 230px;
+    padding-top: 20px;
+}
+#pricezhanshi #priceList li{
+    width: 172px;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    /*z-index: 999;*/
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+#pricezhanshi #priceList li:hover{
+    color: red;
+}
+#search{
+    width: 338px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 80px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#search input{
+    width: 76px;
+    height: 33px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#btn_ok{
+    width: 76px;
+    height: 33px;
+    background-image: linear-gradient(0deg,
+    #ff4b2b 0%,
+    #ff416c 100%),
+    linear-gradient(
+            #eeeeee,
+            #eeeeee);
+    background-blend-mode: normal,
+    normal;
+    border: 1px solid #ff416c;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+#search:hover{
+    -moz-box-shadow:2px 10px 20px #333333; -webkit-box-shadow:2px 10px 20px #333333; box-shadow:2px 10px 20px #999999;
+}
+#cooperation{
+    width: 1200px;
+    margin: 20px auto;
+}
+#cooperation #cooperationList{
+    width: 100%;
+    height: 100%;
+}
+#cooperation #cooperationList li{
+    width: 275px;
+    height: 482px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 9px;
+    vertical-align: top;
+    margin-bottom: 20px;
+    padding: 5px;
+    position: relative;
+}
+.images{
+    width: 269px;
+    height: 356px;
+    margin-left: 3px;
+    border-radius: 5px;
+    margin-top: 3px;
+
+}
+.images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+.cooperation_content{
+    width: 269px;
+    height: 356px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.cooperation_content p{
+    margin-bottom: 15px;
+}
+.depict{
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+.union{
+    width: 30px;
+    height: 14px;
+    font-family: PingFang-SC-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 14px;
+    text-align: center;
+    padding-left: 3px;
+    letter-spacing: 3px;
+    color: #ff0000;
+    display: inline-block;
+    border: 1px solid #ff0000;
+
+}
+.content{
+    width: 211px;
+    height: 25px;
+    font-family: PingFang-SC-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 25px;
+    letter-spacing: 0;
+    vertical-align: top;
+    color: #666666;
+    display: inline-block;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.xinxi{
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+.images_shop{
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+}
+.yuanhua{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.shop_Name{
+    width: 100px;
+    height: 16px;
+    font-family: PingFang-SC-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #666666;
+    display: inline-block;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.cooperation_timg{
+    width: 125px;
+    height: 17px;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-align: center;
+    display: inline-block;
+}
+.operation{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.operation i{
+    font-size: 16px;
+    color: red;
+}
+.operation span{
+    font-size: 13px;
+    color: #666666;
+}
+.unit_price{
+    width: 82px;
+    height: 17px;
+    font-family: PingFang-SC-Regular;
+    font-size: 18px;
+    font-stretch: normal;
+    letter-spacing: 0;
+    font-weight: bold;
+    color: #ff0000;
+    display: inline-block;
+    margin-left: 66px;
+}
+#paging{
+    width: 1200px;
+    height: 50px;
+    margin: 20px auto;
+}
+#paging_zhanshi{
+    float: right;
+    width: 625px;
+    height: 50px;
+}
+#pre{
+    width: 82px;
+    height: 29px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#pag{
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+    display: inline-block;
+}
+#pag #pag_List{
+    width: 250px;
+    height: 50px;
+}
+#pag #pag_List li{
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.08);
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#next{
+    width: 82px;
+    height: 29px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    line-height: 29px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#pagAll{
+    width: 41px;
+    height: 15px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    margin-left: 10px;
+    letter-spacing: 0;
+    color: #333333;
+    display: inline-block;
+}
+#pages{
+    width: 90px;
+    height: 50px;
+    display: inline-block;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    margin-left: 10px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+#pages input{
+    width: 36px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 1px #999999;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#btn_queding{
+    margin-left: 10px;
+    width: 72px;
+    height: 38px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+    text-align: center;
+    font-stretch: normal;
+    line-height: 38px;
+    letter-spacing: 0;
+    color: #333333;
+}
+
+
+@media screen and  (min-width: 1500px) {
+    #centent{
+        width: 100%;
+    }
+    #Type{
+        width: 1200px;
+    }
+    #colligate{
+        width: 1200px;
+    }
+    #cooperation{
+        width: 1200px;
+    }
+}
+@media screen and  (min-width: 1200px) and(max-width: 1500px)  {
+    #centent{
+        width: 100%;
+    }
+    #Type{
+        width: 1200px;
+    }
+
+    #colligate{
+        width: 1200px;
+    }
+    #cooperation{
+        width: 1200px;
+    }
+}
+@media screen and  (min-width: 900px) and (max-width: 1200px) {
+
+    #centent{
+        width: 1327px;
+    }
+    #Type{
+        width: 1327px;
+    }
+    #colligate{
+        width: 1327px;
+    }
+    #cooperation{
+        width: 1327px;
+    }
+}
+
+@media screen and  (max-width: 900px) {
+
+    #centent{
+        width: 1327px;
+    }
+    #Type{
+        width: 1327px;
+    }
+    #colligate{
+        width: 1327px;
+    }
+    #cooperation{
+        width: 1327px;
+    }
+}

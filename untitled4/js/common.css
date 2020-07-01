@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* Reset Start */
+*,
+*:after,
+*:before {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+pre,
+code,
+form,
+input,
+button,
+fieldset,
+textarea,
+p,
+blockquote,
+th,
+td,
+span,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    list-style: none;
+    text-decoration: none;
+    outline-style: none;
+    /*FF*/
+    font-family: "Source Han Sans CN", "Microsoft YaHei", STXihei, STHeiti;
+}
+
+
+/* 来自yahoo，让标题都自定义，适应多个系统应用 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*font-size: 100%;*/
+    font-weight: 500;
+}
+
+
+/* 去除 ie6 & ie7 焦点点状线 */
+
+a:focus,
+*:focus {
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+    margin:0;
+}
+i{
+    font-style: normal;
+}

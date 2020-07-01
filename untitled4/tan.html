@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>cylm</title>
+    <link rel="stylesheet" href="css/tan.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize1.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!-- common styles -->
+    <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+    <!-- individual effect -->
+    <link rel="stylesheet" type="text/css" href="css/dialog-sally.css" />
+
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">-->
+
+
+    <script src="js/modernizr.custom.js"></script>
+    <!-- common styles -->
+
+    <!-- individual effect -->
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/snap.svg-min.js"></script>-->
+</head>
+<body>
+
+<!--公告-->
+<div id="gonggao" style="display: none" >
+    <h2 id="fristOption" style="color: red;cursor: pointer" data-dialog2="gonggao1">联盟公告（上传之前必须浏览！！！！）</h2>
+
+</div>
+
+
+<div id="gonggao1" class="dialog">
+    <div class="dialog__overlay"></div>
+    <div class="dialog__content" style="padding-left: 150px; padding-right: 150px;padding-top: 16px;padding-bottom: 16px">
+        <div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
+
+        </div>
+        <div class="dialog-inner">
+            <h2>联盟公告</h2>
+
+            <div class="xieyi" style="font-size: 14px" id="testp">
+                <p>
+                    创艺联盟郑重提醒:<br>
+                    <span style="margin-left: 2em;padding-top: 20px"></span>设计作品投产内容，平台实施面向公众份
+                    额购买制度，即所有参与者均可购买所要投产商品所需的响应比例，根据商品销售利润
+                    分得响应利润回报，利润回报在商品生命周期结束后7个工作日内清算并支付给购买者。详细条款如下：<br>
+                    <span style="margin-left: 2em"></span>1、	所有参与投产的设计作品有平台负责筛选提供；<br>
+                    <span style="margin-left: 2em"></span>2、	参与投产者可选择响应份额购买，在投产商品销售结束后按购买比例分得利润回报；<br>
+                    <span style="margin-left: 2em"></span>3、	平台给出的商品销售周期为预期时间，存在销售过早或者放缓情况，如遇放缓，购买者可在商品正常销售周期之后与平台沟通分得利润；<br>
+                    <span style="margin-left: 2em"></span>4、	如商品存在滞销，或者清仓以及报损的情况，购买者所有利润均已商品生命周期结束后为准。<br>
+                    <span style="margin-left: 2em"></span>因投产面页涉及到商品陈本和利润等商业机密性资料，所以，只有认证投资的个人或者机构可以查看相应内容，具体要求如下：<br>
+                    <span style="margin-left: 2em"></span>1、	提供真实信息，平台审核认证；<br>
+                    <span style="margin-left: 2em"></span>2、	如有虚假行为，信息提供者承担一切由此造成的后果；<br>
+                    <span style="margin-left: 2em"></span>3、	遵守平台相关交易及服务条款。<br>
+                </p>
+            </div>
+
+            <div>
+                <button class="action" data-dialog-close >确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/classie.js"></script>
+<script src="js/dialogFx.js"></script>
+<script>
+    (function() {
+        var dlgtrigger = document.querySelector( '[data-dialog2]' ),
+            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog2' ) ),
+            dlg = new DialogFx( somedialog );
+        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    })();
+    $(function () {
+        $("#fristOption").click();
+    })
+</script>
+</html>

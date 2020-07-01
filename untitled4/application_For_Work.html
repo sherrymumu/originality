@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>cylm</title>
+    <link rel="stylesheet" href="css/application_For_Work.css">
+    <link rel="stylesheet" href="css/check.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!-- common styles -->
+    <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+    <!-- individual effect -->
+    <link rel="stylesheet" type="text/css" href="css/dialog-sally.css" />
+
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">-->
+
+
+    <script src="js/modernizr.custom.js"></script>
+
+
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div id="banquan" >
+         <div id="content">
+                 <div id="content_top">
+                       <div id="dengji">
+                            版权申请
+                       </div>
+                 </div>
+             <div id="zuopinInfo">
+                    <div id="Info_neirong">
+                        <div class="Info_title">
+                              1.作品信息
+                        </div>
+                        <p class="xian"></p>
+                        <div class="Info_Name">
+                            <div style="display: inline-block">
+                                <span class="zuopin_name">作品名称:</span><input type="text" placeholder="请输入作品名称" class="input"><span class="xin">*</span>
+                            </div>
+                            <div style="display: inline-block;margin-left: 250px">
+                                <span class="zuopin_name">作品分类:</span>
+                                <select name=""  class="select">
+                                    <option value="">
+                                        请选择作品类型
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+                        <div class="Info_Name" style="margin-left: 119px;position: relative">
+                            <div style="display: inline-block">
+                                <span class="zuopin_name" style="vertical-align: top">说明:</span>
+                                <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="作品类别选择其他时必须填写该说明"></textarea>
+                                <div style="position: absolute;bottom: 5px;right: 500px;display: inline-block;font-size: 12px;color: #666666">
+                                    <span>0</span>/<span>200</span>
+                                </div>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -24px">
+                                <span class="zuopin_name">作品创作性质:</span>
+                                <select name=""  class="select">
+                                    <option value="">
+                                        请选择作品创作性质
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+                        <div class="Info_Name" style="margin-left: 119px;position: relative">
+                            <div style="display: inline-block">
+                                <span class="zuopin_name" style="vertical-align: top">说明:</span>
+                                <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="作品创作性质选择其他时必须填写该说明"></textarea>
+                                <div style="position: absolute;bottom: 5px;right: 500px;display: inline-block;font-size: 12px;color: #666666">
+                                    <span>0</span>/<span>200</span>
+                                </div>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+                        <div class="Info_Name" style="margin-left: 25px">
+                            <div style="display: inline-block">
+                                <span class="zuopin_name">创作/制作完成日期:</span>
+                                <input  type="date" class="input"/>
+                                <span class="xin">*</span>
+                            </div>
+                            <div style="display: inline-block;margin-left: 250px">
+                                <span class="zuopin_name">创作/制作完成地点:</span>
+                                <select name=""  class="select">
+                                    <option value="">
+                                        请选择国家
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+                        <div class="Info_Name" style="margin-left: 79px">
+                            <div style="display: inline-block;margin-left: 20px">
+                                <span class="zuopin_name" style="margin-right: 10px;margin-left: -11px">发表状态:</span>
+                                <div style="display: inline-block">
+                                    <input type="radio" id="myCheck1" name="fabiao"><label for="myCheck1" style="margin-bottom: 5px" id="lab1"></label>
+                                    <span style="font-size: 14px">发表</span>
+                                </div>
+
+                                <div style="display: inline-block;margin-left: 10px">
+                                    <input type="radio" id="myCheck2" name="fabiao"><label for="myCheck2" style="margin-bottom: 5px" id="lab2"></label>
+                                    <span style="font-size: 14px">未发表</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="Info_Name" style="margin-left: 62px">
+                            <div style="display: inline-block">
+                                <span class="zuopin_name">首次发表日期:</span>
+                                <input  type="date" class="input"/>
+                                <span class="xin">*</span>
+                            </div>
+                            <div style="display: inline-block;margin-left: 250px">
+                                <span class="zuopin_name">发表地点:</span>
+                                <select name=""  class="select">
+                                    <option value="">
+                                        请选择国家
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+
+                        <div class="Info_Name" style="margin-left: 26px">
+                            <div style="display: inline-block;margin-left: 20px">
+                                <span class="zuopin_name" style="margin-right: 10px;margin-left: -11px">是否发表网络平台:</span>
+                                <div style="display: inline-block">
+                                    <input type="radio" id="myCheck3" name="wangluo"><label for="myCheck3" style="margin-bottom: 5px" id="lab3"></label>
+                                    <span style="font-size: 14px">发表</span>
+                                </div>
+
+                                <div style="display: inline-block;margin-left: 10px">
+                                    <input type="radio" id="myCheck4" name="wangluo"><label for="myCheck4" style="margin-bottom: 5px" id="lab4"></label>
+                                    <span style="font-size: 14px">未发表</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="Info_Name" style="margin-left: 78px">
+                            <div style="display: inline-block">
+                                <span class="zuopin_name">发表的网址:</span><input type="text" placeholder="请输入发表的网址" class="input"><span class="xin">*</span>
+                                <span style="color: #0eb2a8;font-size: 12px;cursor: pointer">添加链接</span>
+                            </div>
+
+                        </div>
+                        <div class="Info_Name" style="margin-left: 119px;position: relative;padding-bottom: 10px">
+                            <div style="display: inline-block">
+                                <span class="zuopin_name" style="vertical-align: top">说明:</span>
+                                <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="作品创作性质选择其他时必须填写该说明"></textarea>
+                                <div style="position: absolute;bottom: 17px;right: 500px;display: inline-block;font-size: 12px;color: #666666">
+                                    <span>0</span>/<span>200</span>
+                                </div>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+             <div id="quanliInfo">
+                 <div id="quanli_neirong">
+                     <div class="Info_title">
+                         2.权利说明
+                     </div>
+                     <p class="xian"></p>
+                     <div class="Info_Name" style="margin-left: 60px">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="margin-right: 10px">权利归属方式:</span><select name=""  class="select">
+                             <option value="">
+                                 个人作品
+                             </option>
+                         </select>
+                             <span class="xin">*</span>
+                         </div>
+                         <div style="display: inline-block;margin-left: 250px">
+                             <span class="zuopin_name">作品分类:</span>
+                             <select name=""  class="select">
+                                 <option value="">
+                                     请选择作品类型
+                                 </option>
+                             </select>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name" style="margin-left: 119px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">说明:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="作品类别选择其他时必须填写该说明"></textarea>
+                             <div style="position: absolute;bottom: 5px;right: 500px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name">
+                         <div style="display: inline-block;margin-left: -32px">
+                             <span class="zuopin_name" style="margin-right: 10px">权利取得方式:</span>
+                             <select name=""  class="select">
+                                 <option value="">
+                                     请选择权利取得方式
+                                 </option>
+                             </select>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name" style="margin-left: 119px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">说明:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="若选择其他，则该说明必填"></textarea>
+                             <div style="position: absolute;bottom: 5px;right: 500px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+
+                     <div class="Info_Name" style="margin-left: 134px">
+                         <div style="display: inline-block;margin-left: 20px">
+
+                             <div style="display: inline-block">
+                                 <input type="radio" id="myCheck5" name="quanbu"><label for="myCheck5" style="margin-bottom: 5px" id="lab5"></label>
+                                 <span style="font-size: 14px">全部</span>
+                             </div>
+
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="radio" id="myCheck6" name="quanbu"><label for="myCheck6" style="margin-bottom: 5px" id="lab6"></label>
+                                 <span style="font-size: 14px">部分</span>
+                             </div>
+                         </div>
+
+                     </div>
+
+                     <div class="Info_Name">
+                         <div style="display: inline-block;margin-left: 52px">
+
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck7" ><label for="myCheck7" style="margin-bottom: 5px" id="lab7" ></label>
+                                 <span style="font-size: 14px">发表权</span>
+                             </div>
+
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck8" ><label for="myCheck8" style="margin-bottom: 5px" id="lab8" ></label>
+                                 <span style="font-size: 14px">署名权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck9" ><label for="myCheck9" style="margin-bottom: 5px" id="lab9" ></label>
+                                 <span style="font-size: 14px">修改权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck10" ><label for="myCheck10" style="margin-bottom: 5px" id="lab10" ></label>
+                                 <span style="font-size: 14px">保护作品完整权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck11" ><label for="myCheck11" style="margin-bottom: 5px" id="lab11" ></label>
+                                 <span style="font-size: 14px">复制权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck12" ><label for="myCheck12" style="margin-bottom: 5px" id="lab12" ></label>
+                                 <span style="font-size: 14px">发行权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck13" ><label for="myCheck13" style="margin-bottom: 5px" id="lab13" ></label>
+                                 <span style="font-size: 14px">出租权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck14" ><label for="myCheck14" style="margin-bottom: 5px" id="lab14" ></label>
+                                 <span style="font-size: 14px">展览权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck15" ><label for="myCheck15" style="margin-bottom: 5px" id="lab15" ></label>
+                                 <span style="font-size: 14px">表演权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck16" ><label for="myCheck16" style="margin-bottom: 5px" id="lab16" ></label>
+                                 <span style="font-size: 14px">放映权</span>
+                             </div>
+
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck17" ><label for="myCheck17" style="margin-bottom: 5px" id="lab17" ></label>
+                                 <span style="font-size: 14px">广播权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck18" ><label for="myCheck18" style="margin-bottom: 5px" id="lab18" ></label>
+                                 <span style="font-size: 14px">信息网络传播权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck19" ><label for="myCheck19" style="margin-bottom: 5px" id="lab19" ></label>
+                                 <span style="font-size: 14px">摄制权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck20" ><label for="myCheck20" style="margin-bottom: 5px" id="lab20" ></label>
+                                 <span style="font-size: 14px">改编权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck21" ><label for="myCheck21" style="margin-bottom: 5px" id="lab21" ></label>
+                                 <span style="font-size: 14px">翻译权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck22" ><label for="myCheck22" style="margin-bottom: 5px" id="lab22" ></label>
+                                 <span style="font-size: 14px">汇编权</span>
+                             </div>
+                             <div style="display: inline-block;margin-left: 10px">
+                                 <input type="checkbox" id="myCheck23" ><label for="myCheck23" style="margin-bottom: 5px" id="lab23" ></label>
+                                 <span style="font-size: 14px">汇编权</span>
+                             </div>
+                         </div>
+                     </div>
+
+
+                     <div class="Info_Name" style="margin-left: 119px;position: relative;padding-bottom: 10px">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">说明:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="作品创作性质选择其他时必须填写该说明"></textarea>
+                             <div style="position: absolute;bottom: 17px;right: 500px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+
+
+                 </div>
+
+             </div>
+
+             <div id="xieyiInfo">
+                <div id="xieyi_neirong">
+                    <div class="Info_title">
+                        3.协议相关
+                    </div>
+                    <p class="xian"></p>
+                    <div class="Info_Name" style="margin-left: 25px">
+                        <div style="display: inline-block;margin-left: 20px">
+                            <span class="zuopin_name" style="margin-right: 10px;margin-left: -11px">请选择上传的协议:</span>
+                            <div style="display: inline-block">
+                                <input type="radio" id="myCheck24" name="xieyi"><label for="myCheck24" style="margin-bottom: 5px" id="lab24"></label>
+                                <span style="font-size: 14px">确认版权归属协议</span>
+                            </div>
+
+                            <div style="display: inline-block;margin-left: 10px">
+                                <input type="radio" id="myCheck25" name="xieyi"><label for="myCheck25" style="margin-bottom: 5px" id="lab25"></label>
+                                <span style="font-size: 14px">协议扫描件上传</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Info_Name" style="margin-left: 92px;padding-bottom: 10px">
+                        <div style="display: inline-block">
+                            <span class="zuopin_name" style="margin-right: 10px">电子协议:</span>
+                            <select name=""  class="select">
+                                <option value="">
+                                    请选择归属协议
+                                </option>
+                            </select>
+                            <span class="xin">*</span>
+                            <div id="qianshu">
+                                若还没有签署协议，点击发起签署协议
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+             </div>
+
+
+             <div id="zhuzuorenInfo">
+                 <div id="zhuzuore_neirong">
+                     <div class="Info_title">
+                         4.著作权人
+                     </div>
+                     <p class="xian"></p>
+                     <div id="zhuzuo_Info">
+                         <table width="100%" id="zhuzuotable">
+                             <tr>
+                                 <td>姓名或名称</td>
+                                 <td>类别</td>
+                                 <td>证件类型</td>
+                                 <td>证件号码</td>
+                                 <td>国籍</td>
+                                 <td>省份</td>
+                                 <td>城市</td>
+                                 <td>署名情况</td>
+                                 <td>操作</td>
+                             </tr>
+                             <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td style="width: 20px">
+                                     <div id="update" style="text-align: center" data-dialog1="update_Info" >编辑</div>
+                                 </td>
+                             </tr>
+                         </table>
+                     </div>
+                     <div id="shangchuan">
+                           <div id="zhengmian">
+                               上传身份证正面
+                           </div>
+                         <div id="fanmian">
+                             上传身份证反面
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div id="uploadInfo">
+                 <div id="upload_neirong">
+                     <div class="Info_title">
+                         5.文件上传
+                     </div>
+                     <p class="xian"></p>
+                     <div class="Info_Name" style="margin-left: 60px">
+                         <div style="display: inline-block;">
+                             <span class="zuopin_name" style="margin-right: 10px">选择分类:</span>
+                             <select name=""  class="select">
+                                 <option value="">
+                                     请选择分类
+                                 </option>
+                             </select>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name" style="margin-left: 30px">
+                         <div style="display: inline-block;">
+                             <span class="zuopin_name" style="vertical-align: top;margin-right: 10px"> 创作原始文件:</span>
+                             <div class="tishi">
+                                 <p style="margin-top: 5px;margin-left: 20px">文件名称：<span>我的文件.jpg</span></p>
+                                 <p style="margin-top: 5px;margin-left: 20px">文件大小：<span>10.kb</span></p>
+                                 <p style="margin-top: 5px;margin-left: 20px">
+                                     <span>下载</span>
+                                     <span style="margin-left: 100px">删除</span>
+                                 </p>
+                             </div>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name" style="margin-left: 9px;padding-bottom: 20px">
+                         <div style="display: inline-block;margin-left: 20px">
+                             <span class="zuopin_name" style="margin-right: 10px;margin-left: -11px">是否有专利证书:</span>
+                             <div style="display: inline-block" id="zhuanli_flase">
+                                 <input type="radio" id="myCheck26" name="zhuanli"><label for="myCheck26" style="margin-bottom: 5px" id="lab26"></label>
+                                 <span style="font-size: 14px">没有</span>
+                             </div>
+
+                             <div style="display: inline-block;margin-left: 10px" id="zhuanli_true">
+                                 <input type="radio" id="myCheck27" name="zhuanli"><label for="myCheck27" style="margin-bottom: 5px" id="lab27"></label>
+                                 <span style="font-size: 14px">有</span>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="Info_Name" style="margin-left: 23px;display: none;padding-bottom: 20px" id="zhuanli">
+                         <div style="display: inline-block;margin-left: 20px">
+                             <span class="zuopin_name" style="margin-right: 10px;margin-left: -11px;vertical-align: top">专利证书文件:</span>
+                             <div class="upload">
+                                 <img src="images/upload_img.png" alt="">上传
+                             </div>
+                             <div class="tishi1">
+                                 <p style="padding-top: 30px">提示：支持</p>
+                                 <p>*，jpg;*.png*,jpeg:*.gif:*bmp:*,txt;*.doc;*docx格式</p>
+                             </div>
+                         </div>
+                     </div>
+
+
+
+                     <div class="Info_Name" style="margin-left: 9px;padding-bottom: 20px">
+                         <div style="display: inline-block;margin-left: 20px">
+                             <span class="zuopin_name" style="margin-right: 10px;margin-left: -11px">是否有商标证书:</span>
+                             <div style="display: inline-block" id="shangbiao_flase">
+                                 <input type="radio" id="myCheck28" name="shangbiao"><label for="myCheck28" style="margin-bottom: 5px" id="lab28"></label>
+                                 <span style="font-size: 14px">没有</span>
+                             </div>
+
+                             <div style="display: inline-block;margin-left: 10px" id="shangbiao_true">
+                                 <input type="radio" id="myCheck29" name="shangbiao"><label for="myCheck29" style="margin-bottom: 5px" id="lab29"></label>
+                                 <span style="font-size: 14px">有</span>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="Info_Name" style="margin-left: 23px;display: none;padding-bottom: 20px" id="shangbiao">
+                         <div style="display: inline-block;margin-left: 20px">
+                             <span class="zuopin_name" style="margin-right: 10px;margin-left: -11px;vertical-align: top">商标证书文件:</span>
+                             <div class="upload">
+                                 <img src="images/upload_img.png" alt="">上传
+                             </div>
+                             <div class="tishi1">
+                                 <p style="padding-top: 30px">提示：支持</p>
+                                 <p>*，jpg;*.png*,jpeg:*.gif:*bmp:*,txt;*.doc;*docx格式</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div id="dengjiInfo">
+                 <div id="dengji_neirong">
+                     <div class="Info_title">
+                         6.登记说明
+                     </div>
+                     <p class="xian"></p>
+                     <div class="Info_Name" style="margin-left: 62px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">作品主题:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="请输入作品主题"></textarea>
+                             <div style="position: absolute;bottom: 5px;right: 463px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name" style="margin-left: 62px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">中心内容:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="请输入中心内容"></textarea>
+                             <div style="position: absolute;bottom: 10px;right: 463px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span><span style="color: #999999;width: 202px;height: 12px;line-height: 30px;font-size: 12px;">作品简介整体内容数字不得低于100字</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name" style="margin-left: 21px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">作品的主要特征:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="请输入作品主要特征"></textarea>
+                             <div style="position: absolute;bottom: 5px;right: 422px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name" style="margin-left: 21px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">作品的主要特点:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="请输入作品主要特点"></textarea>
+                             <div style="position: absolute;bottom: 5px;right: 422px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+
+                     <p class="xiao_title">创作过程说明</p>
+
+                     <div class="Info_Name" style="margin-left: 62px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">作者身份:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="请输入作者身份"></textarea>
+                             <div style="position: absolute;bottom: 5px;right: 463px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name" style="margin-left: 35px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">具体创作过程:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="请输入具体创作过程"></textarea>
+                             <div style="position: absolute;bottom: 10px;right: 435px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span><span style="color: #999999;width: 202px;height: 12px;line-height: 30px;font-size: 12px;">创作过程说明整体内容数字不得低于200字</span>
+                         </div>
+                     </div>
+                     <div class="Info_Name" style="margin-left: 29px">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name">创作完成日期:</span>
+                             <input  type="date" class="input"/>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+
+                     <div class="Info_Name" style="margin-left: 49px;padding-bottom: 20px">
+                         <div style="display: inline-block;margin-left: 20px">
+                             <span class="zuopin_name" style="margin-right: 10px;margin-left: -11px">是否发表:</span>
+                             <div style="display: inline-block" >
+                                 <input type="radio" id="myCheck30" name="fabiao2"><label for="myCheck30" style="margin-bottom: 5px" id="lab30"></label>
+                                 <span style="font-size: 14px">是</span>
+                             </div>
+
+                             <div style="display: inline-block;margin-left: 10px" >
+                                 <input type="radio" id="myCheck31" name="fabiao2"><label for="myCheck31" style="margin-bottom: 5px" id="lab31"></label>
+                                 <span style="font-size: 14px">否</span>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="Info_Name" style="margin-left: 58px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">申请目的:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="请输入申请目的"></textarea>
+                             <div style="position: absolute;bottom: 6px;right: 462px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span>
+                         </div>
+                     </div>
+
+
+                     <div class="Info_Name" style="margin-left: 30px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">作品适用范围:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="请输入作品适用范围"></textarea>
+                             <div style="position: absolute;bottom: 10px;right: 435px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span><span style="color: #999999;width: 202px;height: 12px;line-height: 30px;font-size: 12px;">创作过程说明整体内容数字不得低于200字</span>
+                         </div>
+                     </div>
+
+                     <p class="xiao_title">独创性说明</p>
+
+                     <div class="Info_Name" style="margin-left: 42px;position: relative">
+                         <div style="display: inline-block">
+                             <span class="zuopin_name" style="vertical-align: top">作品独创性:</span>
+                             <textarea class="textarea" style="margin-left: 5px;padding-top: 10px" placeholder="请输入作品独创性"></textarea>
+                             <div style="position: absolute;bottom: 10px;right: 447px;display: inline-block;font-size: 12px;color: #666666">
+                                 <span>0</span>/<span>200</span>
+                             </div>
+                             <span class="xin">*</span><span style="color: #999999;width: 202px;height: 12px;line-height: 30px;font-size: 12px;">独创性说明整体内容数字不得低于100字</span>
+                         </div>
+                     </div>
+
+                     <div style="margin-top: 20px;padding-bottom: 20px">
+                         <a   data-dialog="somedialog" id="bq1">《版权申请协议》</a>
+                         <div style="margin-left: 124px;margin-top: 10px">
+                             <input type="checkbox" id="myCheck"><label for="myCheck" style="margin-bottom: 5px"></label>
+                             <span style="font-size: 16px">我已阅读并同意协议</span>
+                         </div>
+                     </div>
+
+
+                     <div id="gonggao">
+                          <h2>公告</h2>
+                          <div id="gonggao_neirong">
+                              <p ><span style="margin-left: 2.5em;">创艺联盟建议创作者申请作品版权保护，网站面向全球用户开放，如作者无版权，出现抄袭侵权行为，
+                                  网站不承担法律责任；</span></p>
+                              <p style="margin-top: 40px"><span style="margin-left: 2.5em">创艺联盟作品版权费用申请费用298元，作品版权证书有国家版权局核准颁发，具有法律保护效力。申请者必须是作品的合法拥有者，如有欺诈行为，须承担相应的法律责任。</span></p>
+                              <p style="margin-top: 40px"><span style="margin-left: 2.5em">证件信息应国家版权中心要求，仅作版权登记使用，请放心提供，并监督。</span></p>
+
+                          </div>
+                     </div>
+                     <div style="position: relative;width: 100%;height: 70px;padding-bottom: 50px">
+                         <div id="huodong">创艺联盟版权季，申请费用20元</div>
+                         <div id="zongprice"><span style="margin-right: 10px">合计</span><span>￥20</span></div>
+                         <div id="btn_ok">确认提交</div>
+                     </div>
+
+                 </div>
+             </div>
+
+
+
+
+         </div>
+    </div>
+
+
+<!--弹框-->
+    <div id="somedialog" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content" style="padding-left: 150px; padding-right: 150px;padding-top: 16px;padding-bottom: 16px">
+            <div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
+
+            </div>
+            <div class="dialog-inner">
+                <h2 style="font-size: 16px;color: #333333;">版权申请协议</h2>
+                <div class="xieyi">
+                    <p>
+                        <span style="margin-left: 2em"></span>本人（单位）保证所申请登记如下作品（制品）的权利归本人（单位）所有，保证提交的文件真实‘合法。如有不实，本人愿承担一切法律责任。</span><br>
+                        <span style="margin-left: 2em"></span>作品（制品）名称：<span>作品名称作品</span><br>
+                        <span style="margin-left: 2em"></span>特此保证。<br>
+                        <span style="margin-left: 2em"></span>说明：凡申请作品登记者，均需签署如上权利保证书，如有剽窃、抄袭他人作品进行登记，以及提交的文件不真实、不合法，除应承担相应的法律责任外，著作权行政管理部门还将视情况给与行政处罚。<br>
+
+                    </p>
+                </div>
+                <div>
+                    <div  data-dialog-close class="btn">我同意</div>
+                    <div  data-dialog-close class="btn">我拒绝</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="update_Info" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content" style="padding-left: 25px; padding-right: 432px;padding-top: 0;padding-bottom: 54px;">
+            <div class="morph-shape" data-morph-open="M33,0h41c0,0,0,9.871,0,29.871C74,49.871,74,60,74,60H32.666h-0.125H6c0,0,0-10,0-30S6,0,6,0H33" data-morph-close="M33,0h41c0,0-5,9.871-5,29.871C69,49.871,74,60,74,60H32.666h-0.125H6c0,0-5-10-5-30S6,0,6,0H33">
+
+            </div>
+            <div class="dialog-inner">
+                <div id="uploadInfo_dialog">
+                    <div id="upload_neirong_dialog">
+                        <div class="Info_title">
+                            著作人信息
+                        </div>
+                        <p class="xian_dialog"></p>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -108px" >
+                                <span class="zuopin_name">姓名或名称:</span><input type="text" placeholder="请填写名字" class="input"><span class="xin">*</span>
+                            </div>
+                            <div style="display: inline-block;margin-left: 24px">
+                                <span class="zuopin_name">类别:</span>
+                                <select name=""  class="select">
+                                    <option value="">
+                                        个人
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -376px">
+                                <span class="zuopin_name" style="margin-right: 5px">证件类型:</span>
+                                <select name=""  class="select">
+                                    <option value="">
+                                        身份证
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -192px" >
+                                <span class="zuopin_name">证件号码:</span><input type="text" placeholder="" class="input" style="width: 350px"><span class="xin">*</span>
+                            </div>
+
+                        </div>
+
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: 15px">
+                                <span class="zuopin_name" style="margin-right: 5px">国籍:</span>
+                                <select name=""  class="select">
+                                    <option value="">
+                                        请选择国籍
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+
+                                <select name=""  class="select">
+                                    <option value="">
+                                        请选择省份
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+
+
+                                <select name=""  class="select">
+                                    <option value="">
+                                        请选择市区
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+                            </div>
+
+                        </div>
+                        <div class="Info_Name">
+                            <div style="display: inline-block;margin-left: -376px">
+                                <span class="zuopin_name" style="margin-right: 5px">署名情况:</span>
+                                <select name=""  class="select">
+                                    <option value="">
+                                        请选择
+                                    </option>
+                                </select>
+                                <span class="xin">*</span>
+                            </div>
+                        </div>
+                        <p class="xian_dialog"></p>
+
+                    </div>
+                </div>
+                <div id="zhuzuoren">
+                    <div  data-dialog-close class="btn_dialog">取消</div>
+                    <div  data-dialog-close class="btn_dialog">确认</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    $("#zhuanli_true").click(function () {
+        $("#zhuanli").show();
+
+    });
+    $("#zhuanli_flase").click(function () {
+        $("#zhuanli").hide();
+    });
+
+    $("#shangbiao_true").click(function () {
+        $("#shangbiao").show();
+    });
+    $("#shangbiao_flase").click(function () {
+        $("#shangbiao").hide();
+    });
+
+</script>
+<script src="js/classie.js"></script>
+<script src="js/dialogFx.js"></script>
+<script>
+    (function() {
+        var dlgtrigger = document.querySelector( '[data-dialog]' ),
+            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+            dlg = new DialogFx( somedialog );
+        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    })();
+    (function() {
+        var dlgtrigger = document.querySelector( '[data-dialog1]' ),
+            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog1' ) ),
+            dlg = new DialogFx( somedialog );
+        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    })();
+//    (function() {
+//        var dlgtrigger = document.querySelector( '[data-dialog2]' ),
+//            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog2' ) ),
+//            dlg = new DialogFx( somedialog );
+//        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+//    })();
+
+</script>
+
+</html>
